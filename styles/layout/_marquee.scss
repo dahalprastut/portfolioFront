@@ -1,0 +1,18 @@
+.marquee {
+  //   > div {
+  //     display: flex;
+  //     max-width: 100%;
+  //     overflow: hidden;
+  //   }
+  overflow: hidden;
+  @include new_section;
+  h1 {
+    // color: $primary-color;
+    display: flex;
+    min-width: 1000%;
+
+    &:last-child {
+      transform: translateX(-30%);
+    }
+  }
+}

@@ -1,0 +1,147 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1001;
+  // display: none;
+
+  h5 {
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  .navigation__link {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+    font-size: 1.6rem;
+    margin-left: 5.8rem;
+    cursor: pointer;
+    span {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 0.8rem;
+      width: 2rem;
+
+      small {
+        height: 0.2rem;
+        width: 2rem;
+        border-top: 0.2rem solid $secondary-color;
+        transition: 1s;
+      }
+
+      .middle-small {
+        width: 1rem;
+      }
+    }
+    &:hover {
+      span small {
+        width: 1rem;
+      }
+      .middle-small {
+        width: 2rem;
+      }
+    }
+  }
+}
+
+.animation-div {
+  height: 130vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1003;
+}
+
+.hidden-nav {
+  padding-top: 3rem;
+  margin-top: -8rem;
+  position: absolute;
+  padding: 2.5rem 6rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: $primary-color;
+  height: 100vh;
+  // align-items: flex-start;
+  display: block;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 1rem;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    margin-top: 10rem;
+    height: calc(100% - 13rem);
+
+    ul {
+      width: 60%;
+
+      li {
+        list-style: none;
+        margin-bottom: 6rem;
+      }
+
+      a {
+        font-size: 9rem;
+        color: $secondary-color;
+        -webkit-text-stroke: 2px $secondary-color;
+        color: transparent;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+          -webkit-text-stroke: $secondary-color;
+          color: $secondary-color;
+        }
+
+        &.active {
+          -webkit-text-stroke: $secondary-color;
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .social {
+      .links,
+      .mail {
+        text-align: left;
+
+        a,
+        span {
+          margin-top: 2.2rem;
+          color: $secondary-color;
+          font-size: 2.4rem;
+          text-decoration: none;
+          display: block;
+        }
+      }
+
+      .mail {
+        margin-top: 5rem;
+      }
+    }
+  }
+}
+
+// body {
+//   height: 100vh;
+//   overflow: hidden;
+// }

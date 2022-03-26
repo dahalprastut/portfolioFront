@@ -1,0 +1,24 @@
+.card {
+  display: block;
+  max-width: 40%;
+  color: $primary-color;
+  text-decoration: none;
+
+  .outer-image {
+  }
+  .bottom-des {
+    display: flex;
+    flex-direction: column;
+
+    strong {
+      margin-top: 6rem;
+    }
+
+    h2 {
+      margin-top: 1.6rem;
+    }
+    span {
+      margin-top: 2rem;
+    }
+  }
+}

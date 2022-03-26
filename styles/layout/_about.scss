@@ -1,0 +1,39 @@
+.about {
+  padding-bottom: 30rem;
+  > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 23rem;
+
+    h2 {
+      max-width: 40%;
+    }
+    p {
+      max-width: 45%;
+    }
+  }
+
+  .skills {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    > div {
+      max-width: 22%;
+      margin-right: 13rem;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+
+    .bottom-skills {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-top: 1.6rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.top {
+  height: 100vh;
+}
+
+.outer-title {
+  max-width: 1277px;
+  margin: auto;
+  padding: 0 2rem;
+  h2 {
+    font-size: 7rem;
+    margin-top: 5rem;
+  }
+}
+
+.title {
+  position: absolute;
+  top: 10rem;
+
+  // left: 2%;
+  // transform: translateX(2%);
+  .center {
+    height: calc(100vh - 10rem);
+    display: flex;
+    flex-direction: column;
+    padding: 0 0rem;
+    justify-content: center;
+  }
+
+  p,
+  strong {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 100;
+  }
+}
+
+section {
+  h1 {
+    margin-top: 12rem;
+    color: $primary-color;
+    margin-bottom: 15rem;
+  }
+  .center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  a:nth-child(even) {
+    padding-top: 20rem;
+  }
+}
+
+article {
+  color: $primary-color;
+
+  .title-intro {
+    margin-top: 20rem;
+  }
+  h1 {
+    margin-top: 2.4rem;
+    margin-bottom: 6rem;
+    width: 90%;
+    line-height: 9rem;
+  }
+
+  .about-client {
+    display: flex;
+
+    span {
+      font-size: 1.4rem;
+    }
+
+    > div:last-child {
+      margin-left: 12rem;
+    }
+  }
+}
+
+.parallax {
+  background: url("../../public/images/staion@2x.png")
+    top center fixed;
+  height: 100vh;
+  width: 100%;
+  margin-top: 25rem;
+}
+
+.intro {
+  margin-top: 23rem;
+}
+.about-page-intro {
+  .about {
+    padding-bottom: 0;
+  }
+}
+
+footer {
+  margin-top: 30rem;
+
+  background-color: $primary-color;
+}

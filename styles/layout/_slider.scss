@@ -1,0 +1,32 @@
+.slick-slider {
+  //   button {
+  //     display: none !important;
+  //   }
+
+  h1 {
+    width: 90%;
+  }
+}
+
+.slick-vertical .slick-slide {
+  //   width: 55% !important;
+  height: 250px !important;
+  display: flex !important;
+  //   align-items: center !important;
+  //   position: relative;
+}
+
+.slick-list {
+  height: 272px !important;
+}
+
+.hovered-state {
+  position: absolute;
+  //   top: 20%;
+  //   left: 10%;
+  height: 25rem;
+  width: 20rem;
+  background-color: lightblue;
+  //   z-index: 40;
+  display: none;
+}

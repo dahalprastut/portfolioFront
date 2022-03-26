@@ -1,0 +1,17 @@
+.credits {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 21rem;
+  padding-bottom: 3rem;
+  > div {
+    display: flex;
+    align-items: center;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  > .credits__first div {
+    margin-right: 12.8rem;
+  }
+}

@@ -1,0 +1,71 @@
+.content_wrapper {
+  color: $primary-color;
+  .inside-content {
+    margin-top: 30rem;
+    font-size: 2.4rem;
+    .center {
+      display: flex;
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+      }
+    }
+
+    h2 {
+      font-size: 4.4rem;
+      width: 48%;
+    }
+
+    strong {
+      font-size: 3.2rem;
+    }
+
+    p {
+      display: flex;
+      flex-direction: column;
+    }
+
+    ul {
+      li {
+        margin-top: 8rem;
+      }
+    }
+  }
+
+  .images-wrapper {
+    margin-top: 30rem;
+
+    .double-image {
+      .center {
+        display: flex;
+        > div {
+          width: 48%;
+          margin-left: 8rem;
+          height: 70rem;
+          display: flex;
+          flex-direction: column;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    .description {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-top: 4rem;
+    }
+
+    .single-image {
+      background: url("../../public/images/staion@2x.png")
+        top center fixed;
+      height: 80vh;
+      width: 100%;
+      margin-top: 5rem;
+    }
+  }
+}
