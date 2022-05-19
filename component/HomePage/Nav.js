@@ -115,8 +115,6 @@ export default function Nav({ color }) {
   );
 
   useEffect(() => {
-    console.log("is", isOpen);
-
     if (isOpen) {
       setTimeout(() => {
         document.body.style.height = "100vh";

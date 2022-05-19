@@ -6,7 +6,9 @@ export default function Content() {
       <div className="first_intro">
         <div className="inside-content">
           <div className="center">
-            <h2>Project Introduction</h2>
+            <h2>
+              Project <br /> Introduction
+            </h2>
             <div>
               <p>
                 Lorem ipsum dolor sit amet

@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "../component//Head";
 import Nav from "../component/HomePage/Nav";
 import Marquee from "../component/HomePage/Marquee";
 import AboutSection from "../component/HomePage/AboutSection";
@@ -9,6 +10,7 @@ export default function About() {
   const secondaryColor = "#fff";
   return (
     <>
+      <Head />
       <div className="top bg-primary">
         <div className="center">
           <Nav color={secondaryColor} />
@@ -17,7 +19,6 @@ export default function About() {
       <div className="outer-title">
         <div className="title">
           <div className="center">
-            <h1>ABOUT</h1>
             <h2>
               Hello! My name is Samar Adhikari,
               I'm a Kathmandu based UI/UX designer

@@ -8,6 +8,7 @@
   padding: 0 2rem;
   h2 {
     font-size: 7rem;
+    line-height: 9rem;
     margin-top: 5rem;
   }
 }
@@ -56,17 +57,25 @@ article {
 
   .title-intro {
     margin-top: 20rem;
+
+    h3 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+    }
   }
   h1 {
     margin-top: 2.4rem;
     margin-bottom: 6rem;
     width: 90%;
     line-height: 9rem;
+    font-size: 7rem;
   }
 
   .about-client {
     display: flex;
-
+    h4 {
+      font-family: blackEme;
+    }
     span {
       font-size: 1.4rem;
     }

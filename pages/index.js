@@ -1,3 +1,4 @@
+import Head from "../component//Head";
 import Nav from "../component/HomePage/Nav";
 import Slider from "../component/HomePage/Slider";
 import Marquee from "../component/HomePage/Marquee";
@@ -12,6 +13,7 @@ export default function Home() {
   const secondaryColor = "#fff";
   return (
     <>
+      <Head />
       <div className="top bg-primary">
         <div className="center">
           <Nav color={secondaryColor} />

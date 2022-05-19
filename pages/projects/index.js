@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "../component//Head";
 import Nav from "../../component/HomePage/Nav";
 import Marquee from "../../component/HomePage/Marquee";
 import RecentWorks from "../../component/HomePage/RecentWorks";
@@ -9,6 +10,7 @@ export default function Projects() {
   const secondaryColor = "#fff";
   return (
     <>
+      <Head />
       <div>
         <div className="center">
           <Nav color={primaryColor} />
