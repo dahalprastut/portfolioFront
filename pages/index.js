@@ -6,18 +6,18 @@ import RecentWorks from "../component/HomePage/RecentWorks";
 import AboutSection from "../component/HomePage/AboutSection";
 import HorSlider from "../component/HomePage/HorSlider";
 import Social from "../component/HomePage/Social";
+
 // import SmoothScroll from "../component/HomePage/SmoothScroll";
 
 export default function Home() {
   const primaryColor = "#000";
   const secondaryColor = "#fff";
+
   return (
     <>
       <Head />
       <div className="top bg-primary">
-        <div className="center">
-          <Nav color={secondaryColor} />
-        </div>
+        <Nav />
       </div>
       <div className="outer-title">
         <div className="title">
