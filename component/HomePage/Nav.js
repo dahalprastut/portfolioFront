@@ -4,7 +4,8 @@ import TopNav from "./TopNav";
 import HiddenNav from "./HiddenNav";
 
 export default function Nav({
-  color,
+  backgroundColor,
+  textColor,
   showHiddenNav,
   openHandler,
   closeHandler,
@@ -14,13 +15,14 @@ export default function Nav({
       {!showHiddenNav ? (
         <TopNav
           key="1"
-          color={color}
+          textColor={textColor}
           toggleOpen={openHandler}
         />
       ) : (
         <HiddenNav
           key="2"
-          color={color}
+          backgroundColor={backgroundColor}
+          textColor={textColor}
           toggleClose={closeHandler}
         />
       )}

@@ -39,7 +39,8 @@ export default function Projects({
         animate="visible"
       >
         <Nav
-          color={primaryColor}
+          backgroundColor={secondaryColor}
+          textColor={primaryColor}
           showHiddenNav={showHiddenNav}
           setShowHiddenNav={setShowHiddenNav}
           openHandler={openHandler}

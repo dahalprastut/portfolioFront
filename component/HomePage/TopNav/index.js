@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { shownNavVariants } from "../../../utils/utils";
 
 export default function TopNav({
-  color,
+  textColor,
   toggleOpen,
 }) {
   return (
@@ -19,7 +19,7 @@ export default function TopNav({
         <h5>
           {" "}
           <Link href="/" passHref>
-            <a style={{ color: color }}>
+            <a style={{ color: textColor }}>
               Samar Adhikari
             </a>
           </Link>
@@ -38,14 +38,20 @@ export default function TopNav({
             Menu
             <span>
               <small
-                style={{ borderColor: color }}
+                style={{
+                  borderColor: textColor,
+                }}
               ></small>
               <small
-                style={{ borderColor: color }}
+                style={{
+                  borderColor: textColor,
+                }}
                 className="middle-small"
               ></small>
               <small
-                style={{ borderColor: color }}
+                style={{
+                  borderColor: textColor,
+                }}
               ></small>
             </span>
           </div>

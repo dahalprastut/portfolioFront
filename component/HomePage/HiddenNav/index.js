@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import styled from "styled-components";
 import { motion } from "framer-motion";
 import {
   hiddenNavVariants,
@@ -9,8 +10,48 @@ import {
   linkVariants,
 } from "../../../utils/utils";
 
+const NavStyled = styled.nav`
+  background: ${props =>
+    props.backgroundColor
+      ? props.backgroundColor
+      : ""};
+  color: ${props =>
+    props.textColor ? props.textColor : ""};
+`;
+const BottomNavStyled = styled.div`
+  ul {
+    a {
+      -webkit-text-stroke: 2px
+        ${props =>
+          props.textColor ? props.textColor : ""};
+
+      &:hover {
+        -webkit-text-stroke: ${props =>
+          props.textColor ? props.textColor : ""};
+        color: ${props =>
+          props.textColor ? props.textColor : ""};
+      }
+
+      &.active {
+        -webkit-text-stroke: ${props =>
+          props.textColor ? props.textColor : ""};
+        color: ${props =>
+          props.textColor ? props.textColor : ""};
+      }
+    }
+  }
+`;
+
+const OuterNavStyled = styled(motion.div)`
+  background: ${props =>
+    props.backgroundColor
+      ? props.backgroundColor
+      : ""};
+`;
+
 export default function HiddenNav({
-  color,
+  backgroundColor,
+  textColor,
   toggleClose,
 }) {
   const router = useRouter();
@@ -39,14 +80,20 @@ export default function HiddenNav({
   };
 
   return (
-    <motion.div
+    <OuterNavStyled
       className="outer-nav"
+      backgroundColor={backgroundColor}
+      textColor={textColor}
       variants={hiddenNavVariants}
       initial="hidden"
       animate="visible"
       exit="exit"
     >
-      <nav className="hidden-nav">
+      <NavStyled
+        className="hidden-nav"
+        backgroundColor={backgroundColor}
+        textColor={textColor}
+      >
         <div className="center">
           <div className="hidden-nav__top">
             <h5>
@@ -64,11 +111,16 @@ export default function HiddenNav({
               </div>
             </div>
           </div>
-          <div className="hidden-nav__bottom">
+          <BottomNavStyled
+            className="hidden-nav__bottom"
+            backgroundColor={backgroundColor}
+            textColor={textColor}
+          >
             <motion.ul variants={bottomVariants}>
               {routes.map(el => {
                 return (
                   <motion.li
+                    key={el.pathname}
                     variants={linkVariants}
                   >
                     <Link
@@ -95,7 +147,10 @@ export default function HiddenNav({
                 <h3>Socials</h3>
                 {socialLinks.map(el => {
                   return (
-                    <a href={el.link}>
+                    <a
+                      href={el.link}
+                      key={el.name}
+                    >
                       {el.name}
                     </a>
                   );
@@ -108,13 +163,13 @@ export default function HiddenNav({
                 </span>
               </div>
             </motion.div>
-          </div>
+          </BottomNavStyled>
         </div>
-      </nav>
+      </NavStyled>
       <div
         className="animated-div"
-        style={{ background: color }}
+        style={{ background: textColor }}
       ></div>
-    </motion.div>
+    </OuterNavStyled>
   );
 }

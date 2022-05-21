@@ -43,7 +43,8 @@ export default function Home({
         className="top bg-primary"
       >
         <Nav
-          color={secondaryColor}
+          backgroundColor={primaryColor}
+          textColor={secondaryColor}
           showHiddenNav={showHiddenNav}
           setShowHiddenNav={setShowHiddenNav}
           openHandler={openHandler}
