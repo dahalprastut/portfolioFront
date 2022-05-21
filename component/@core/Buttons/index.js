@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { useRouter } from "next/router";
 import styled from "styled-components";
 import {
   motion,
@@ -84,7 +85,8 @@ const Fill = styled(motion.div)`
   transform: translate3d(0, 80%, 0);
 `;
 
-const Button = ({ text }) => {
+const Button = ({ text, url }) => {
+  const router = useRouter();
   const { mouseX, mouseY } = useMousePosition();
   const [ref, isHovered] = useHover();
   const textRef = useRef();
@@ -183,8 +185,14 @@ const Button = ({ text }) => {
     fillControls,
   ]);
 
+  const clickHandler = () => {
+    if (url) {
+      router.push(url);
+    }
+  };
+
   return (
-    <Style ref={ref}>
+    <Style ref={ref} onClick={clickHandler}>
       <span ref={textRef}>
         <Text data-text={text}>{text}</Text>
       </span>

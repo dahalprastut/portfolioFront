@@ -27,7 +27,10 @@ export default function TopNav({
         <div className="navigation__link">
           <div>
             <Link className="btn-round" href="#">
-              <Button text={"Hire Me"} />
+              <Button
+                text={"Hire Me"}
+                url="/contact"
+              />
             </Link>
           </div>
 

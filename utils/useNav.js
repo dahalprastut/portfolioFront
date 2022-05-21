@@ -5,6 +5,7 @@ function useNav() {
     useState(false);
   useEffect(() => {
     document.body.style.overflow = "auto";
+    setShowHiddenNav(false);
   }, []);
 
   const openHandler = () => {

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   motion,
   AnimatePresence,
@@ -12,19 +12,18 @@ import {
   sectionVariants,
   topBgVariants,
 } from "../utils/utils";
+import useNav from "../utils/useNav";
 
-export default function contact({
+export default function Contact({
   primaryColor,
   secondaryColor,
-  showHiddenNav,
-  setShowHiddenNav,
-  openHandler,
-  closeHandler,
 }) {
-  useEffect(() => {
-    setShowHiddenNav(false);
-    document.body.style.overflow = "auto";
-  }, []);
+  const [
+    showHiddenNav,
+    setShowHiddenNav,
+    openHandler,
+    closeHandler,
+  ] = useNav();
   return (
     <motion.div
       exit={{
