@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import {
   hiddenNavVariants,
@@ -12,6 +13,31 @@ export default function HiddenNav({
   color,
   toggleClose,
 }) {
+  const router = useRouter();
+
+  const routes = [
+    { pathname: "/", name: "Home" },
+    {
+      pathname: "/projects",
+      name: "Case Studies",
+    },
+    { pathname: "/about", name: "About" },
+    { pathname: "/contact", name: "Contact" },
+  ];
+
+  const socialLinks = [
+    { name: "Behance", link: "#" },
+    { name: "Dribble", link: "#" },
+    { name: "Facebook", link: "#" },
+    { name: "Instagram", link: "#" },
+  ];
+
+  const getClassName = route => {
+    return router.pathname == route
+      ? "active"
+      : "";
+  };
+
   return (
     <motion.div
       className="outer-nav"
@@ -40,27 +66,26 @@ export default function HiddenNav({
           </div>
           <div className="hidden-nav__bottom">
             <motion.ul variants={bottomVariants}>
-              <motion.li variants={linkVariants}>
-                <Link href="/" passHref>
-                  <a className="active">Home</a>
-                </Link>
-              </motion.li>
-
-              <motion.li variants={linkVariants}>
-                <Link href="/projects" passHref>
-                  <a>Case Studies</a>
-                </Link>
-              </motion.li>
-              <motion.li variants={linkVariants}>
-                <Link href="/about" passHref>
-                  <a>About</a>
-                </Link>
-              </motion.li>
-              <motion.li variants={linkVariants}>
-                <Link href="/contact" passHref>
-                  <a>Contact</a>
-                </Link>
-              </motion.li>
+              {routes.map(el => {
+                return (
+                  <motion.li
+                    variants={linkVariants}
+                  >
+                    <Link
+                      href={el.pathname}
+                      passHref
+                    >
+                      <a
+                        className={getClassName(
+                          el.pathname
+                        )}
+                      >
+                        {el.name}
+                      </a>
+                    </Link>
+                  </motion.li>
+                );
+              })}
             </motion.ul>
             <motion.div
               variants={socialVariants}
@@ -68,10 +93,13 @@ export default function HiddenNav({
             >
               <div className="links">
                 <h3>Socials</h3>
-                <a href="#">Behance</a>
-                <a href="#">Dribble</a>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
+                {socialLinks.map(el => {
+                  return (
+                    <a href={el.link}>
+                      {el.name}
+                    </a>
+                  );
+                })}
               </div>
               <div className="mail">
                 <h3>Say Hi</h3>
