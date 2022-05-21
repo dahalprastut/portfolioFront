@@ -1,18 +1,27 @@
 import React from "react";
 import Link from "next/link";
-import Button from "../../Buttons/Button";
+import Button from "../../@core/Buttons";
+import { motion } from "framer-motion";
+import { shownNavVariants } from "../../../utils/utils";
 
 export default function TopNav({
   color,
   toggleOpen,
 }) {
   return (
-    <nav>
+    <motion.nav
+      variants={shownNavVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <div className="center">
         <h5>
           {" "}
           <Link href="/" passHref>
-            <a>Samar Adhikari</a>
+            <a style={{ color: color }}>
+              Samar Adhikari
+            </a>
           </Link>
         </h5>
         <div className="navigation__link">
@@ -42,6 +51,6 @@ export default function TopNav({
           </div>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }

@@ -4,9 +4,9 @@ import {
   motion,
   useAnimation,
 } from "framer-motion";
-import useMousePosition from "../../utils/useMousePosition";
-import { distance } from "../../utils/utils";
-import useHover from "./../../utils/useHover";
+import useMousePosition from "../../../utils/useMousePosition";
+import { distance } from "../../../utils/utils";
+import useHover from "../../../utils/useHover";
 
 const Text = styled(motion.span)`
   display: block;

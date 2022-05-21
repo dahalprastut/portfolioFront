@@ -1,36 +1,80 @@
+import React, { useEffect } from "react";
+import {
+  motion,
+  AnimatePresence,
+} from "framer-motion";
+import Marquee from "../component/@core/Marquee";
 import Head from "../component//Head";
 import Nav from "../component/HomePage/Nav";
 import Slider from "../component/HomePage/Slider";
-import Marquee from "../component/HomePage/Marquee";
 import RecentWorks from "../component/HomePage/RecentWorks";
 import AboutSection from "../component/HomePage/AboutSection";
-import HorSlider from "../component/HomePage/HorSlider";
 import Social from "../component/HomePage/Social";
+import {
+  sectionVariants,
+  topBgVariants,
+} from "../utils/utils";
 
-// import SmoothScroll from "../component/HomePage/SmoothScroll";
-
-export default function Home() {
-  const primaryColor = "#000";
-  const secondaryColor = "#fff";
+export default function Home({
+  primaryColor,
+  secondaryColor,
+  showHiddenNav,
+  setShowHiddenNav,
+  openHandler,
+  closeHandler,
+}) {
+  useEffect(() => {
+    setShowHiddenNav(false);
+    document.body.style.overflow = "auto";
+  }, []);
 
   return (
-    <>
+    <motion.div
+      exit={{
+        opacity: 0,
+        transition: { duration: 1 },
+      }}
+    >
       <Head />
-      <div className="top bg-primary">
-        <Nav />
-      </div>
-      <div className="outer-title">
-        <div className="title">
-          <div className="center">
-            <p>
-              Hello I am
-              <strong> Samar Adhikari</strong> & I
-              specialize in
-            </p>
-            <Slider />
-          </div>
-        </div>
-      </div>
+      <motion.div
+        variants={topBgVariants}
+        initial="hidden"
+        animate="visible"
+        className="top bg-primary"
+      >
+        <Nav
+          color={secondaryColor}
+          showHiddenNav={showHiddenNav}
+          setShowHiddenNav={setShowHiddenNav}
+          openHandler={openHandler}
+          closeHandler={closeHandler}
+        />
+      </motion.div>
+      <AnimatePresence exitBeforeEnter>
+        {!showHiddenNav && (
+          <motion.div
+            className="outer-title"
+            variants={sectionVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+            <div className="title">
+              <div className="center">
+                <p>
+                  Hello I am
+                  <strong>
+                    {" "}
+                    Samar Adhikari
+                  </strong>{" "}
+                  & I specialize in
+                </p>
+                <Slider />
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
       <Marquee
         color={primaryColor}
         title="RECENT WORKS"
@@ -59,7 +103,6 @@ export default function Home() {
         color={primaryColor}
         title="DON'T MISS OUT"
       />
-      <HorSlider />
       <footer>
         <Marquee
           color={secondaryColor}
@@ -69,6 +112,6 @@ export default function Home() {
           <Social />
         </div>
       </footer>
-    </>
+    </motion.div>
   );
 }

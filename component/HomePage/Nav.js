@@ -1,33 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import { AnimatePresence } from "framer-motion";
 import TopNav from "./TopNav";
 import HiddenNav from "./HiddenNav";
 
-export default function Nav() {
-  const primaryColor = "#000";
-  const secondaryColor = "#fff";
-
-  const [showHiddenNav, setShowHiddenNav] =
-    useState(false);
-
-  const openHandler = () => {
-    setShowHiddenNav(true);
-  };
-
-  const closeHandler = () => {
-    setShowHiddenNav(false);
-  };
+export default function Nav({
+  color,
+  showHiddenNav,
+  openHandler,
+  closeHandler,
+}) {
   return (
     <AnimatePresence exitBeforeEnter>
       {!showHiddenNav ? (
         <TopNav
           key="1"
-          color={secondaryColor}
+          color={color}
           toggleOpen={openHandler}
         />
       ) : (
         <HiddenNav
           key="2"
+          color={color}
           toggleClose={closeHandler}
         />
       )}

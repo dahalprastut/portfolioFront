@@ -1,62 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
-const hiddenNavVariants = {
-  hidden: { y: "-250vh" },
-  visible: {
-    y: "0",
-    transition: {
-      duration: 3,
-      type: "tween",
-      ease: "easeInOut",
-      when: "beforeChildren",
-    },
-  },
-  exit: {
-    y: "-200vh",
-    transition: {
-      duration: 3,
-      type: "tween",
-      ease: "easeInOut",
-    },
-  },
-};
-
-const bottomVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const socialVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-      delay: 0.8,
-    },
-  },
-};
-
-const linkVariants = {
-  hidden: { x: "-60px" },
-  visible: {
-    x: "0",
-    transition: {
-      duration: 0.5,
-      type: "tween",
-    },
-  },
-};
+import {
+  hiddenNavVariants,
+  bottomVariants,
+  socialVariants,
+  linkVariants,
+} from "../../../utils/utils";
 
 export default function HiddenNav({
+  color,
   toggleClose,
 }) {
   return (
@@ -130,7 +83,10 @@ export default function HiddenNav({
           </div>
         </div>
       </nav>
-      <div className="animated-div"></div>
+      <div
+        className="animated-div"
+        style={{ background: color }}
+      ></div>
     </motion.div>
   );
 }

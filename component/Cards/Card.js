@@ -4,48 +4,11 @@ import React, {
   useRef,
 } from "react";
 import Link from "next/link";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import dynamic from "next/dynamic";
+
 import HoverEffect from "hover-effect";
-
-gsap.registerPlugin(ScrollTrigger);
-// const hoverEffect = dynamic(
-//   () => {
-//     return import("hover-effect")
-//   },
-//   { ssr: false }
-// );
-
-// const HoverEffect = dynamic(
-//   () =>
-//     import("hover-effect").then(
-//       a => a.hover - effect
-//     ),
-//   { ssr: false }
-// );
-
-// console.log("hover", hoverEffect);
 
 export default function Card() {
   const container = useRef();
-  const cardRef = useRef(null);
-  const t1 = gsap.timeline();
-
-  useEffect(() => {
-    gsap.from(cardRef.current, {
-      y: "100",
-      duration: 1,
-
-      scrollTrigger: {
-        trigger: cardRef.current,
-        start: "top 80%",
-        end: "bottom 60%",
-        toggleActions:
-          "restart complete reverse reset",
-      },
-    });
-  });
 
   useEffect(() => {
     new HoverEffect({
@@ -59,7 +22,7 @@ export default function Card() {
   }, [container]);
   return (
     <Link href="/projects/1">
-      <a className="card" ref={cardRef}>
+      <a className="card">
         <div
           className="outer-image"
           ref={container}
