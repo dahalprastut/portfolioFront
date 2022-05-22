@@ -40,9 +40,13 @@ export default function VerticalMode() {
       <div
         className="hovered-state"
         ref={hoverdState}
+        // style={{
+        //   left: mouseX - (innerWidth / 2 - 450),
+        //   top: mouseY - 250,
+        // }}
         style={{
-          left: mouseX - (innerWidth / 2 - 450),
-          top: mouseY - 250,
+          left: mouseX,
+          top: mouseY,
         }}
       ></div>
       <Slider {...settings}>
