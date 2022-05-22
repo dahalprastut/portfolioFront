@@ -49,13 +49,13 @@ export default function Contact({
       <AnimatePresence exitBeforeEnter>
         {!showHiddenNav && (
           <motion.section
+            className="contact-section"
             variants={sectionVariants}
             initial="hidden"
             animate="visible"
             exit="exit"
           >
             <div className="center">
-              <h1>CONTACT</h1>
               <Form />
             </div>
           </motion.section>

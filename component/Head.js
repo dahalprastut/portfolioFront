@@ -4,7 +4,7 @@ import Head from "next/head";
 export default function Header() {
   return (
     <Head>
-      <title>Portfolio</title>
+      <title>Portfolio | Samar Adhikari</title>
       <link
         rel="preconnect"
         href="https://fonts.googleapis.com"
