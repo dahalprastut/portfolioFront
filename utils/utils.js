@@ -10,16 +10,15 @@ export const sectionVariants = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 1.5,
-      delay: 2,
+      duration: 1,
       type: "tween",
-      ease: "easeIn",
+      ease: "easeInOut",
     },
   },
   exit: {
     opacity: 0,
     transition: {
-      duration: 1.5,
+      duration: 1,
       type: "tween",
       ease: "easeInOut",
     },
@@ -39,11 +38,11 @@ export const topBgVariants = {
 };
 
 export const hiddenNavVariants = {
-  hidden: { y: "-250vh" },
+  hidden: { y: "-240vh" },
   visible: {
     y: "0",
     transition: {
-      duration: 3,
+      duration: 2,
       type: "tween",
       ease: "easeInOut",
       when: "beforeChildren",
@@ -52,7 +51,7 @@ export const hiddenNavVariants = {
   exit: {
     y: "-200vh",
     transition: {
-      duration: 3,
+      duration: 2,
       type: "tween",
       ease: "easeInOut",
     },
@@ -97,7 +96,7 @@ export const shownNavVariants = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 1.5,
+      duration: 1,
       type: "tween",
       ease: "easeInOut",
     },
@@ -105,7 +104,7 @@ export const shownNavVariants = {
   exit: {
     opacity: 0,
     transition: {
-      duration: 1.5,
+      duration: 1,
       type: "tween",
       ease: "easeInOut",
     },
@@ -114,13 +113,14 @@ export const shownNavVariants = {
 
 export const animateCardVariants = {
   hidden: {
-    y: 100,
+    y: 400,
   },
   visible: {
     y: 0,
     transition: {
-      duration: 1,
+      duration: 0.8,
       type: "tween",
+      ease: "easeInOut",
     },
   },
 };
