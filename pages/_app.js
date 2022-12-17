@@ -1,5 +1,5 @@
 import "../styles/app.scss";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, transform } from "framer-motion";
 import useMousePosition from "../utils/useMousePosition";
 
 function MyApp({ Component, pageProps, router }) {

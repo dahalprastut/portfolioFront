@@ -19,7 +19,8 @@ body {
   // height: 2px;
   // width: 2px;
   background-color: orange;
-  z-index: 5000;
+  z-index: -1;
+  transition: 0.1s ease-out;
   border-radius: 100%;
 }
 
