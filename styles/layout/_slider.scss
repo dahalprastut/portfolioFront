@@ -1,36 +1,43 @@
 .slick-slider {
-  //   button {
-  //     display: none !important;
-  //   }
+	//   button {
+	//     display: none !important;
+	//   }
+	position: relative;
+	z-index: 2;
 
-  h1 {
-    width: 90%;
-  }
+	h1 {
+		width: 90%;
+	}
 }
 
 .slick-vertical .slick-slide {
-  //   width: 55% !important;
-  height: 258px !important;
-  display: flex !important;
-  //   align-items: center !important;
-  //   position: relative;
+	// > div {
+	// 	display: block;
+	// 	width: 100%;
+	// }
+	//   width: 55% !important;
+	height: 258px !important;
+	display: flex !important;
+	//   align-items: center !important;
+	cursor: none;
 }
 
 .slick-list {
-  height: 272px !important;
+	height: 272px !important;
 }
 
 .hovered-state {
-  position: fixed;
-  left: -50px;
-  top: -50px;
-  padding: 20px;
-  //   top: 20%;
-  //   left: 10%;
-  height: 25rem;
-  width: 20rem;
-  background-color: lightblue;
-  //   z-index: 40;
-  // opacity: 0;
-  display: none;
+	position: fixed;
+	left: -50px;
+	top: -50px;
+	padding: 20px;
+	//   top: 20%;
+	//   left: 10%;
+	height: 25rem;
+	width: 20rem;
+	// z-index: 100;
+	background-color: lightblue;
+	//   z-index: 40;
+	// opacity: 0;
+	display: none;
 }
