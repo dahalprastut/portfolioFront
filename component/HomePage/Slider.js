@@ -10,9 +10,9 @@ export default function VerticalMode() {
 		dots: false,
 		autoplay: true,
 		autoplaySpeed: 3000,
-		//   adaptiveHeight: true,
+		adaptiveHeight: true,
 		infinite: true,
-		slidesToShow: 2,
+		slidesToShow: 1,
 		slidesToScroll: 1,
 		vertical: true,
 		verticalSwiping: false,
@@ -53,9 +53,7 @@ export default function VerticalMode() {
 					<h1>Logo Design</h1>
 				</div>
 				<div onMouseEnter={onHover} onMouseLeave={onLeave}>
-					<div className="outer-heading">
-						<h1>UI/UX</h1>
-					</div>
+					<h1>UI/UX</h1>
 				</div>
 			</Slider>
 		</div>
