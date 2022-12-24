@@ -1,57 +1,159 @@
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
 }
 
 h1 {
-  font-size: 9.8rem;
-  font-family: blackEme;
+	font-size: 9.8rem;
+	font-family: blackEme;
 
-  strong {
-    font-family: blackEme;
-  }
+	strong {
+		font-family: blackEme;
+	}
 }
 
 h2 {
-  font-size: 4.4rem;
-  line-height: 5.5rem;
-  font-family: blackEme;
+	font-size: 4.4rem;
+	line-height: 5.5rem;
+	font-family: blackEme;
 }
 
 h3 {
-  font-size: 3.2rem;
-  font-family: blackEme;
+	font-size: 3.2rem;
+	font-family: blackEme;
 }
 
 h4 {
-  font-size: 2.4rem;
+	font-size: 2.4rem;
+	font-weight: 300;
 }
 
 h5 {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 strong,
 span,
 a {
-  font-size: 1.8rem;
-  line-height: 3rem;
+	font-size: 1.8rem;
+	line-height: 3rem;
 }
 
 p {
-  font-size: 2rem;
-  line-height: 3.8rem;
+	font-size: 2rem;
+	line-height: 3.8rem;
 }
 
 strong {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
 }
 
 small,
 button {
-  font-size: 1.6rem;
-  font-weight: 400;
+	font-size: 1.6rem;
+	font-weight: 400;
 
-  font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: $lg-width) {
+	h1 {
+		font-size: 8rem;
+	}
+
+	h2 {
+		font-size: 4rem;
+		line-height: 5rem;
+	}
+
+	h3 {
+		font-size: 2.8rem;
+	}
+	h4 {
+		font-size: 2rem;
+	}
+
+	h5 {
+		font-size: 1.8rem;
+	}
+
+	strong,
+	span,
+	a {
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+	}
+	p {
+		font-size: 1.8rem;
+		line-height: 3.2rem;
+	}
+}
+
+@media (max-width: $md-width) {
+	h1 {
+		font-size: 6rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+		line-height: 4.5rem;
+	}
+	h3 {
+		font-size: 2.6rem;
+	}
+
+	h4 {
+		font-size: 1.6rem;
+	}
+
+	h5 {
+		font-size: 1.6rem;
+	}
+	strong,
+	span,
+	a {
+		font-size: 1.4rem;
+		line-height: 2.2rem;
+	}
+
+	p {
+		font-size: 1.6rem;
+		line-height: 2.8rem;
+	}
+}
+
+@media (max-width: $sm-width) {
+	h1 {
+		font-size: 4rem;
+	}
+
+	h2 {
+		font-size: 2.4rem;
+		line-height: 3.5rem;
+	}
+
+	h3 {
+		font-size: 2.4rem;
+	}
+
+	h4 {
+		font-size: 1.2rem;
+	}
+
+	h5 {
+		font-size: 1.4rem;
+	}
+
+	strong,
+	span,
+	a {
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+
+	p {
+		font-size: 1.4rem;
+		line-height: 2.3rem;
+	}
 }

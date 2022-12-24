@@ -99,14 +99,16 @@ export default function HiddenNav({ backgroundColor, textColor, toggleClose }) {
 						<motion.div variants={socialVariants} className="social">
 							<div className="links">
 								<h3>Socials</h3>
-								{socialLinks.map((el) => {
-									return (
-										<a className="text-up" href={el.link} key={el.name}>
-											<small>{el.name}</small>
-											<small>{el.name}</small>
-										</a>
-									);
-								})}
+								<div className="social-sites">
+									{socialLinks.map((el) => {
+										return (
+											<a className="text-up" href={el.link} key={el.name}>
+												<small>{el.name}</small>
+												<small>{el.name}</small>
+											</a>
+										);
+									})}
+								</div>
 							</div>
 							<div className="mail">
 								<h3>Say Hi</h3>

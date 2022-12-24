@@ -1,39 +1,70 @@
 .about {
-  padding-bottom: 30rem;
-  > div:first-child {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 23rem;
+	@include p-b-300;
+	> div:first-child {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 13rem;
 
-    h2 {
-      max-width: 40%;
-    }
-    p {
-      max-width: 45%;
-    }
-  }
+		@media (max-width: $sm-width) {
+			padding-bottom: 0;
+		}
 
-  .skills {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+		h2 {
+			max-width: 40%;
+		}
+		p {
+			max-width: 45%;
+		}
+	}
 
-    > div {
-      max-width: 22%;
-      margin-right: 13rem;
+	.skills {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
-    }
+		> div {
+			max-width: 20%;
+			margin-right: 13rem;
+			margin-top: 10rem;
 
-    .bottom-skills {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      span {
-        margin-top: 1.6rem;
-      }
-    }
-  }
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+		}
+
+		.bottom-skills {
+			margin-top: 1rem;
+			display: flex;
+			flex-direction: column;
+			span {
+				margin-top: 1.6rem;
+			}
+		}
+	}
+}
+
+@media (max-width: $md-width) {
+	.about {
+		.skills {
+			flex-direction: column;
+			> div {
+				max-width: 100%;
+			}
+		}
+	}
+}
+@media (max-width: $sm-width) {
+	.about {
+		.about-des {
+			flex-direction: column;
+			h2,
+			p {
+				max-width: 100% !important;
+			}
+
+			p {
+				margin-top: 7rem;
+			}
+		}
+	}
 }

@@ -1,9 +1,9 @@
-.slick-slide {
+.outer-title .slick-slide {
 	// float: none !important;
-	width: 950px !important;
+	width: 100% !important;
 }
 
-.slick-slider {
+.outer-title .slick-slider {
 	//   button {
 	//     display: none !important;
 	//   }
@@ -15,7 +15,7 @@
 	}
 }
 
-.slick-vertical .slick-slide {
+.outer-title .slick-vertical .slick-slide {
 	// > div {
 	// 	display: block;
 	// 	width: 100%;
@@ -27,8 +27,8 @@
 	cursor: none;
 }
 
-.slick-list {
-	height: 272px !important;
+.outer-title .slick-list {
+	height: 262px !important;
 }
 
 .hovered-state {

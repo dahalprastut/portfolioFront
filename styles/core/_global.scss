@@ -8,7 +8,7 @@ body {
 	position: relative;
 	color: $secondary-color;
 	max-width: 100%;
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 }
 
 .mouse-follow {
@@ -66,5 +66,12 @@ img {
 
 	&:hover small {
 		transform: translateY(-36px);
+	}
+
+	@media (max-width: $md-width) {
+		height: 22px;
+		&:hover small {
+			transform: translateY(-28px);
+		}
 	}
 }

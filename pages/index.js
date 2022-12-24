@@ -7,6 +7,7 @@ import Slider from "../component/HomePage/Slider";
 import RecentWorks from "../component/HomePage/RecentWorks";
 import AboutSection from "../component/HomePage/AboutSection";
 import Social from "../component/HomePage/Social";
+import Gallary from "../component/HomePage/Gallary";
 import useNav from "../utils/useNav";
 
 import { sectionVariants, topBgVariants } from "../utils/utils";
@@ -42,7 +43,7 @@ export default function Home({ primaryColor, secondaryColor }) {
 						exit="exit"
 					>
 						<div className="title">
-							<div className="center">
+							<div>
 								<p>
 									Hello I am
 									<strong> Samar Adhikari</strong> & I specialize in
@@ -72,6 +73,10 @@ export default function Home({ primaryColor, secondaryColor }) {
 				</div>
 			</div>
 			<Marquee color={primaryColor} title="DON'T MISS OUT" />
+
+			<div className="gallary">
+				<Gallary />
+			</div>
 			<footer>
 				<Marquee color={secondaryColor} title="SAY HI!!" />
 				<div className="center">

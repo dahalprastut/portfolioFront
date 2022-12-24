@@ -103,7 +103,7 @@ nav {
 		// padding-top: 17rem;
 
 		ul {
-			width: 60%;
+			max-width: 65%;
 
 			li {
 				list-style: none;
@@ -112,26 +112,18 @@ nav {
 
 			a {
 				font-size: 9rem;
+				word-break: keep-all;
 				// -webkit-text-stroke: 2px $secondary-color;
 				color: transparent;
 				text-decoration: none;
 				transition: 0.5s;
 				font-family: blackEme;
 				display: block;
-
-				&:hover {
-					// -webkit-text-stroke: $secondary-color;
-					// color: $secondary-color;
-				}
-
-				// &.active {
-				//   -webkit-text-stroke: $secondary-color;
-				//   color: $secondary-color;
-				// }
 			}
 		}
 
 		.social {
+			max-width: 35%;
 			.links,
 			.mail {
 				text-align: left;
@@ -153,7 +145,76 @@ nav {
 	}
 }
 
-// body {
-//   height: 100vh;
-//   overflow: hidden;
-// }
+@media (max-width: $lg-width) {
+	.hidden-nav {
+		&__bottom {
+			ul {
+				a {
+					font-size: 6rem;
+				}
+			}
+			.social {
+				.links a,
+				.mail span {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+}
+@media (max-width: $md-width) {
+	.hidden-nav {
+		&__bottom {
+			ul {
+				a {
+					font-size: 4rem;
+				}
+			}
+			.social {
+				.links a,
+				.mail span {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+}
+@media (max-width: $sm-width) {
+	nav {
+		padding-top: 4rem;
+		.navigation__link {
+			.hire-btn {
+				display: none;
+			}
+		}
+	}
+
+	.hidden-nav {
+		padding-top: 0;
+		&__bottom {
+			display: block;
+			ul {
+				max-width: 100%;
+				li {
+					margin-bottom: 5rem;
+				}
+				a {
+					font-size: 4.5rem;
+				}
+			}
+			.social {
+				max-width: 100%;
+				margin-top: 10rem;
+
+				.links a,
+				.mail span {
+					font-size: 1.4rem;
+				}
+			}
+			.social-sites {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+	}
+}

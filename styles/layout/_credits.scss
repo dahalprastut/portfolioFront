@@ -1,17 +1,52 @@
 .credits {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 21rem;
-  padding-bottom: 3rem;
-  > div {
-    display: flex;
-    align-items: center;
-    div {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  > .credits__first div {
-    margin-right: 12.8rem;
-  }
+	display: flex;
+	justify-content: space-between;
+
+	@include m-t-210;
+	padding-bottom: 3rem;
+	> div {
+		display: flex;
+		align-items: center;
+		div {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	> .credits__first div {
+		margin-right: 12.8rem;
+	}
+}
+
+@media (max-width: $lg-width) {
+	.credits {
+		> .credits__first div {
+			margin-right: 8rem;
+		}
+	}
+}
+@media (max-width: $md-width) {
+	.credits {
+		> .credits__first div {
+			margin-right: 4rem;
+		}
+	}
+}
+@media (max-width: $sm-width) {
+	.credits {
+		flex-direction: column;
+
+		> div {
+			justify-content: center;
+		}
+		> .credits__first {
+			justify-content: space-between;
+			div {
+				margin-right: 0rem;
+			}
+		}
+
+		> .credits__second {
+			margin-top: 3rem;
+		}
+	}
 }
