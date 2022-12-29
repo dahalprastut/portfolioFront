@@ -5,7 +5,7 @@
 		justify-content: space-between;
 		padding-bottom: 13rem;
 
-		@media (max-width: $sm-width) {
+		@media (max-width: $md-width) {
 			padding-bottom: 0;
 		}
 
@@ -45,16 +45,6 @@
 
 @media (max-width: $md-width) {
 	.about {
-		.skills {
-			flex-direction: column;
-			> div {
-				max-width: 100%;
-			}
-		}
-	}
-}
-@media (max-width: $sm-width) {
-	.about {
 		.about-des {
 			flex-direction: column;
 			h2,
@@ -66,5 +56,26 @@
 				margin-top: 7rem;
 			}
 		}
+		.skills {
+			flex-direction: column;
+			> div {
+				max-width: 100%;
+			}
+		}
 	}
 }
+// @media (max-width: $sm-width) {
+// 	.about {
+// 		.about-des {
+// 			flex-direction: column;
+// 			h2,
+// 			p {
+// 				max-width: 100% !important;
+// 			}
+
+// 			p {
+// 				margin-top: 7rem;
+// 			}
+// 		}
+// 	}
+// }

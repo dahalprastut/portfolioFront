@@ -41,7 +41,7 @@ export default function HiddenNav({ backgroundColor, textColor, toggleClose }) {
 			name: "Case Studies",
 		},
 		{ pathname: "/about", name: "About" },
-		{ pathname: "/contact", name: "Contact" },
+		// { pathname: "/contact", name: "Contact" },
 	];
 
 	const socialLinks = [

@@ -1,73 +1,112 @@
 .content_wrapper {
-  color: $primary-color;
-  .inside-content {
-    margin-top: 30rem;
-    font-size: 2.4rem;
-    .center {
-      display: flex;
+	color: $primary-color;
+	.inside-content {
+		@include m-t-300;
+		font-size: 2.4rem;
+		.center {
+			display: flex;
+			justify-content: space-between;
 
-      > div {
-        display: flex;
-        flex-direction: column;
-        width: 48%;
-      }
-    }
+			> div {
+				display: flex;
+				flex-direction: column;
+				max-width: 48%;
+				padding: 0 2rem;
+			}
+			@media (max-width: $md-width) {
+				padding: 0;
+				flex-direction: column;
 
-    h2 {
-      font-size: 4.4rem;
-      width: 48%;
-    }
+				> div {
+					margin-top: 2.4rem;
+					max-width: 100%;
+				}
+			}
+		}
 
-    strong {
-      font-size: 3.2rem;
-    }
+		h2 {
+			font-size: 4.4rem;
+			max-width: 48%;
+			@media (max-width: $md-width) {
+				padding: 0 2rem;
+				max-width: 100%;
+			}
+		}
 
-    p {
-      display: flex;
-      flex-direction: column;
-    }
+		strong {
+			font-size: 3.2rem;
+		}
 
-    ul {
-      li {
-        margin-top: 8rem;
-      }
-    }
-  }
+		p {
+			display: flex;
+			flex-direction: column;
+		}
 
-  .images-wrapper {
-    margin-top: 30rem;
+		ul {
+			li {
+				margin-top: 8rem;
+			}
+		}
+	}
 
-    .double-image {
-      .center {
-        display: flex;
-        > div {
-          width: 48%;
-          margin-left: 8rem;
-          height: 80rem;
-          display: flex;
-          flex-direction: column;
-          margin-top: 15rem;
+	.images-wrapper {
+		@include m-t-300;
 
-          &:first-child {
-            margin-left: 0;
-            margin-top: 0;
-          }
-        }
-      }
-    }
+		.double-image {
+			.center {
+				display: flex;
 
-    .description {
-      text-align: center;
-      font-size: 2.4rem;
-      margin-top: 4rem;
-    }
+				> div {
+					max-width: 48%;
+					margin-left: 8rem;
+					height: 80rem;
+					display: flex;
+					flex-direction: column;
+					margin-top: 15rem;
 
-    .single-image {
-      background: url("../../public/images/staion@2x.png")
-        top center fixed;
-      height: 80vh;
-      width: 100%;
-      margin-top: 5rem;
-    }
-  }
+					&:first-child {
+						margin-left: 0;
+						margin-top: 0;
+					}
+
+					.outer-image {
+						height: 72rem;
+					}
+				}
+
+				@media (max-width: $md-width) {
+					padding: 0;
+					flex-direction: column;
+
+					> div {
+						max-width: 100%;
+						margin-left: 0;
+						height: auto;
+						margin-top: 5rem;
+					}
+
+					.outer-image {
+						height: 40vh !important;
+					}
+				}
+			}
+		}
+
+		.description {
+			text-align: center;
+			font-size: 2.4rem;
+			margin-top: 4rem;
+		}
+
+		.single-image {
+			background: url("../../public/images/staion@2x.png") top center fixed;
+			height: 80vh;
+			width: 100%;
+			margin-top: 5rem;
+
+			@media (max-width: $md-width) {
+				height: 40vh;
+			}
+		}
+	}
 }

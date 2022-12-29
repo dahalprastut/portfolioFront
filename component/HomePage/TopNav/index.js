@@ -16,12 +16,12 @@ export default function TopNav({ textColor, toggleOpen }) {
 				</h5>
 				<div className="navigation__link">
 					<div className="hire-btn">
-						<Link className="btn-round" href="#">
-							<Button text={"Hire Me"} url="/contact" />
-						</Link>
+						{/* <Link className="btn-round" href="#"> */}
+						<Button className="btn-round" text={"Hire Me"} />
+						{/* </Link> */}
 					</div>
 
-					<div onClick={() => toggleOpen()} className="hamburger">
+					<div onClick={() => toggleOpen()} className="hamburger" style={{ color: textColor }}>
 						Menu
 						<span>
 							<small

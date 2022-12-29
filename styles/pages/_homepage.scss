@@ -63,6 +63,16 @@ article {
 	.title-intro {
 		margin-top: 20rem;
 
+		@media (max-width: $lg-width) {
+			margin-top: 18rem;
+		}
+		@media (max-width: $md-width) {
+			margin-top: 15rem;
+		}
+		@media (max-width: $sm-width) {
+			margin-top: 10rem;
+		}
+
 		h3 {
 			font-family: "Montserrat", sans-serif;
 			font-weight: 700;
@@ -74,6 +84,20 @@ article {
 		width: 90%;
 		line-height: 9rem;
 		font-size: 7rem;
+
+		@media (max-width: $lg-width) {
+			font-size: 5.6rem;
+			line-height: 6rem;
+		}
+		@media (max-width: $md-width) {
+			font-size: 4.2rem;
+			line-height: 5rem;
+		}
+
+		@media (max-width: $sm-width) {
+			font-size: 3.2rem;
+			line-height: 4rem;
+		}
 	}
 
 	.about-client {
@@ -96,6 +120,20 @@ article {
 	height: 100vh;
 	width: 100%;
 	margin-top: 25rem;
+
+	@media (max-width: $lg-width) {
+		margin-top: 20rem;
+	}
+
+	@media (max-width: $md-width) {
+		margin-top: 15rem;
+		height: 40vh;
+	}
+
+	@media (max-width: $sm-width) {
+		margin-top: 10rem;
+		height: 30vh;
+	}
 }
 
 .intro {
@@ -119,6 +157,13 @@ footer {
 			line-height: 7rem;
 		}
 	}
+
+	.title {
+		p,
+		strong {
+			font-size: 2rem;
+		}
+	}
 }
 @media (max-width: $md-width) {
 	.outer-title {
@@ -127,12 +172,26 @@ footer {
 			line-height: 6rem;
 		}
 	}
+
+	.title {
+		p,
+		strong {
+			font-size: 1.6rem;
+		}
+	}
 }
 @media (max-width: $sm-width) {
 	.outer-title {
 		h2 {
 			font-size: 3.2rem;
 			line-height: 4rem;
+		}
+	}
+
+	.title {
+		p,
+		strong {
+			font-size: 1.2rem;
 		}
 	}
 

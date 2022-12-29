@@ -20,8 +20,8 @@ export default function Marquee({ title, color }) {
 	}, []);
 
 	function handleScroll(event) {
-		const positionTop = (firstMarquee?.current?.getBoundingClientRect().bottom - 350) / 25;
-		const positionBottom = -((secondMarquee?.current?.getBoundingClientRect().bottom - 350) / 25);
+		const positionTop = (firstMarquee?.current?.getBoundingClientRect().bottom - 350) / 60;
+		const positionBottom = -((secondMarquee?.current?.getBoundingClientRect().bottom - 350) / 20);
 		// const positionTop =
 		//   (firstMarquee.current.getBoundingClientRect()
 		//     .bottom -

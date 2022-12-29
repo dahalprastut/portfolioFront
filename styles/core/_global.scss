@@ -11,18 +11,16 @@ body {
 	overflow-x: hidden !important;
 }
 
-.mouse-follow {
-	position: fixed;
-	left: -50px;
-	top: -50px;
-	padding: 5px;
-	// height: 2px;
-	// width: 2px;
-	background-color: orange;
-	z-index: 0;
-	transition: 0.1s ease-out;
-	border-radius: 100%;
-}
+// .mouse-follow {
+// 	position: fixed;
+// 	left: -50px;
+// 	top: -50px;
+// 	padding: 5px;
+// 	background-color: orange;
+// 	z-index: 0;
+// 	transition: 0.1s ease-out;
+// 	border-radius: 100%;
+// }
 
 html {
 	font-size: 67.5%;
