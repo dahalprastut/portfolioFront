@@ -14,7 +14,7 @@ export default function About({ primaryColor, secondaryColor }) {
 		<motion.div
 			exit={{
 				opacity: 0,
-				transition: { duration: 1 },
+				transition: { duration: 0.2 },
 			}}
 		>
 			<Head />
@@ -41,7 +41,7 @@ export default function About({ primaryColor, secondaryColor }) {
 							<div className="center">
 								<h2>
 									Hello! My name is Samar Adhikari, I'm a Kathmandu based UI/UX designer with more
-									than 4 years of digital design experience.
+									than 5 years of experience.
 								</h2>
 							</div>
 						</div>
@@ -56,7 +56,7 @@ export default function About({ primaryColor, secondaryColor }) {
 				className="intro about-page-intro"
 			>
 				<div className="center">
-					<AboutSection />
+					<AboutSection color="#000" />
 				</div>
 			</div>
 

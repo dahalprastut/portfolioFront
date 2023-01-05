@@ -19,7 +19,7 @@ export default function Home({ primaryColor, secondaryColor }) {
 		<motion.div
 			exit={{
 				opacity: 0,
-				transition: { duration: 0.8 },
+				transition: { duration: 0.2 },
 			}}
 		>
 			<Head />
@@ -69,7 +69,7 @@ export default function Home({ primaryColor, secondaryColor }) {
 			>
 				<Marquee color={secondaryColor} title="ABOUT ME" />
 				<div className="center">
-					<AboutSection />
+					<AboutSection color="#fff" />
 				</div>
 			</div>
 			<Marquee color={primaryColor} title="DON'T MISS OUT" />

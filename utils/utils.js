@@ -10,7 +10,7 @@ export const sectionVariants = {
 	visible: {
 		opacity: 1,
 		transition: {
-			duration: 0.3,
+			duration: 0.1,
 			type: "tween",
 			ease: "easeInOut",
 		},
@@ -18,7 +18,8 @@ export const sectionVariants = {
 	exit: {
 		opacity: 0,
 		transition: {
-			duration: 0.3,
+			duration: 0.1,
+			delay: 0.2,
 			type: "tween",
 			ease: "easeInOut",
 		},
@@ -30,7 +31,7 @@ export const topBgVariants = {
 	visible: {
 		opacity: 1,
 		transition: {
-			duration: 0.3,
+			duration: 0.1,
 			type: "tween",
 			ease: "easeInOut",
 		},
@@ -42,7 +43,7 @@ export const hiddenNavVariants = {
 	visible: {
 		y: "0",
 		transition: {
-			duration: 1.6,
+			duration: 0.7,
 			type: "tween",
 			ease: "easeOut",
 			when: "beforeChildren",
@@ -51,7 +52,7 @@ export const hiddenNavVariants = {
 	exit: {
 		y: "-240vh",
 		transition: {
-			duration: 1.6,
+			duration: 0.7,
 			type: "tween",
 			ease: "easeInOut",
 		},
@@ -63,8 +64,8 @@ export const bottomVariants = {
 	visible: {
 		opacity: 1,
 		transition: {
-			duration: 0.5,
-			staggerChildren: 0.2,
+			duration: 0.2,
+			staggerChildren: 0.1,
 		},
 	},
 };
@@ -74,8 +75,8 @@ export const socialVariants = {
 	visible: {
 		opacity: 1,
 		transition: {
-			duration: 0.5,
-			delay: 0.8,
+			duration: 0.2,
+			delay: 0.3,
 		},
 	},
 };
@@ -85,7 +86,7 @@ export const linkVariants = {
 	visible: {
 		x: "0",
 		transition: {
-			duration: 0.5,
+			duration: 0.4,
 			type: "tween",
 		},
 	},
@@ -96,7 +97,7 @@ export const shownNavVariants = {
 	visible: {
 		opacity: 1,
 		transition: {
-			duration: 1,
+			duration: 0.3,
 			type: "tween",
 			ease: "easeInOut",
 		},
@@ -104,7 +105,7 @@ export const shownNavVariants = {
 	exit: {
 		opacity: 0,
 		transition: {
-			duration: 1,
+			duration: 0.3,
 			type: "tween",
 			ease: "easeInOut",
 		},

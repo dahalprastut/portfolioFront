@@ -38,11 +38,36 @@
 	padding: 20px;
 	//   top: 20%;
 	//   left: 10%;
-	height: 25rem;
-	width: 20rem;
+	height: 47.4rem;
+	width: 36.8rem;
 	// z-index: 100;
-	background-color: lightblue;
 	//   z-index: 40;
 	// opacity: 0;
 	display: none;
+	background: lightblue;
+}
+
+.image-one {
+	background: url("../../public/images/identity.gif") content-box;
+}
+
+.image-two {
+	background: url("../../public/images/uiux.gif") content-box;
+}
+
+.image-three {
+	background: url("../../public/images/uiux.gif") content-box;
+}
+
+.vyayam {
+	background: url("../../public/images/vyayam.jpg");
+	background-size: contain;
+}
+.yetiyap {
+	background: url("../../public/images/YetiYap.png");
+	background-size: contain;
+}
+.itahari {
+	background: url("../../public/images/itahari.jpg");
+	background-size: contain;
 }

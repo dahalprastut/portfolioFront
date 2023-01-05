@@ -73,3 +73,23 @@ img {
 		}
 	}
 }
+
+.d-flex {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.jc-end {
+	justify-content: flex-end;
+}
+.jc-between {
+	justify-content: space-between;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}

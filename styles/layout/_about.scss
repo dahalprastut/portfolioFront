@@ -10,10 +10,18 @@
 		}
 
 		h2 {
-			max-width: 40%;
+			max-width: 44%;
+			display: flex;
+			align-items: center;
+		}
+		.des-right {
+			max-width: 45%;
 		}
 		p {
-			max-width: 45%;
+			max-width: 100%;
+			margin-bottom: 2rem;
+			line-height: 2.8rem;
+			font-size: 1.8rem;
 		}
 	}
 
@@ -22,6 +30,13 @@
 		justify-content: center;
 		flex-wrap: wrap;
 
+		strong {
+			font-size: 7.5rem;
+			color: transparent;
+			opacity: 0.1;
+			margin-bottom: 5rem;
+			display: block;
+		}
 		> div {
 			max-width: 20%;
 			margin-right: 13rem;
@@ -48,12 +63,13 @@
 		.about-des {
 			flex-direction: column;
 			h2,
-			p {
+			.des-right {
 				max-width: 100% !important;
 			}
 
 			p {
 				margin-top: 7rem;
+				font-size: 1.6rem;
 			}
 		}
 		.skills {
@@ -64,18 +80,3 @@
 		}
 	}
 }
-// @media (max-width: $sm-width) {
-// 	.about {
-// 		.about-des {
-// 			flex-direction: column;
-// 			h2,
-// 			p {
-// 				max-width: 100% !important;
-// 			}
-
-// 			p {
-// 				margin-top: 7rem;
-// 			}
-// 		}
-// 	}
-// }

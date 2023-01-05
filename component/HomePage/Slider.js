@@ -9,7 +9,7 @@ export default function VerticalMode() {
 	const settings = {
 		dots: false,
 		autoplay: true,
-		autoplaySpeed: 3000,
+		autoplaySpeed: 4000,
 		adaptiveHeight: true,
 		infinite: true,
 		slidesToShow: 1,
@@ -17,10 +17,24 @@ export default function VerticalMode() {
 		vertical: true,
 		verticalSwiping: false,
 		arrows: false,
+		pauseOnHover: false,
 	};
 	const { mouseX, mouseY } = useMousePosition();
-	const onHover = () => {
+	const onHover = (index) => {
 		hoverdState.current.style.display = "block";
+		if (index == 0) {
+			hoverdState.current.classList.remove("image-two");
+			hoverdState.current.classList.remove("image-three");
+			hoverdState.current.classList.add("image-one");
+		} else if (index == 1) {
+			hoverdState.current.classList.remove("image-one");
+			hoverdState.current.classList.remove("image-three");
+			hoverdState.current.classList.add("image-two");
+		} else {
+			hoverdState.current.classList.remove("image-one");
+			hoverdState.current.classList.remove("image-two");
+			hoverdState.current.classList.add("image-three");
+		}
 	};
 	const onLeave = () => {
 		hoverdState.current.style.display = "none";
@@ -36,24 +50,20 @@ export default function VerticalMode() {
 			<div
 				className="hovered-state"
 				ref={hoverdState}
-				// style={{
-				//   left: mouseX - (innerWidth / 2 - 450),
-				//   top: mouseY - 250,
-				// }}
 				style={{
 					left: mouseX - 100,
 					top: mouseY - 100,
 				}}
 			></div>
 			<Slider {...settings}>
-				<div onMouseEnter={onHover} onMouseLeave={onLeave}>
+				<div onMouseEnter={() => onHover("0")} onMouseLeave={onLeave}>
 					<h1>Identity & Branding</h1>
 				</div>
-				<div onMouseEnter={onHover} onMouseLeave={onLeave}>
-					<h1>Logo Design</h1>
+				<div onMouseEnter={() => onHover("1")} onMouseLeave={onLeave}>
+					<h1>User Interface</h1>
 				</div>
-				<div onMouseEnter={onHover} onMouseLeave={onLeave}>
-					<h1>UI/UX</h1>
+				<div onMouseEnter={() => onHover("2")} onMouseLeave={onLeave}>
+					<h1>User Experience</h1>
 				</div>
 			</Slider>
 		</div>

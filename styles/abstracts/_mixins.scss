@@ -27,6 +27,17 @@
 		margin-top: 10rem;
 	}
 }
+@mixin m-t-200 {
+	margin-top: 20rem;
+
+	@media (max-width: $lg-width) {
+		margin-top: 5rem;
+	}
+
+	@media (max-width: $md-width) {
+		margin-top: 5rem;
+	}
+}
 
 @mixin m-t-120 {
 	margin-top: 12rem;

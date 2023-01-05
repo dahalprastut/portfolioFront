@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import { animateCardVariants } from "./../../utils/utils";
 import useMousePosition from "../../utils/useMousePosition";
 
-export default function Card() {
+export default function Card({ image, mirrorImage, slug, title, work }) {
 	const container = useRef();
 	const controls = useAnimation();
 	const [ref, inView] = useInView();
@@ -26,15 +26,15 @@ export default function Card() {
 		new HoverEffect({
 			parent: container.current,
 			intensity: 0.3,
-			image1: "/images/YetiYap.png",
-			image2: "https://picsum.photos/420/620",
+			image1: image,
+			image2: mirrorImage,
 			displacementImage: "https://raw.githubusercontent.com/robin-dela/hover-effect/master/images/fluid.jpg",
 		});
 	}, [container]);
 
 	return (
 		<motion.div className="card" ref={ref} variants={animateCardVariants} initial="hidden" animate={controls}>
-			<Link href="/projects/1">
+			<Link href={`/projects/${slug}`}>
 				<a>
 					<div
 						className="outer-image"
@@ -55,8 +55,8 @@ export default function Card() {
 
 					<div className="bottom-des">
 						<strong>YetiYap</strong>
-						<h2>Identity Design for Nepal's First Viral News Site</h2>
-						<span>Branding | Website | UI/UX</span>
+						<h2>{title}</h2>
+						<span>{work}</span>
 					</div>
 				</a>
 			</Link>

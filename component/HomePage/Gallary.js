@@ -12,7 +12,7 @@ export default class Responsive extends Component {
 			adaptiveWidth: true,
 			adaptiveHeight: true,
 			className: "slider variable-width",
-			slidesToShow: 3,
+			slidesToShow: 4,
 			responsive: [
 				{
 					breakpoint: 600,
@@ -32,22 +32,19 @@ export default class Responsive extends Component {
 			<div>
 				<Slider {...settings}>
 					<div>
-						<img src="/images/yeti2.png" alt="yeti" />
+						<img src="/images/meroGame.jpg" alt="yeti" />
 					</div>
 					<div>
-						<img src="/images/yeti2.png" alt="yeti" />
+						<img src="/images/hamroStar.jpg" alt="yeti" />
 					</div>
 					<div>
-						<img src="/images/yeti2.png" alt="yeti" />
+						<img src="/images/Parentiv.jpg" alt="yeti" />
 					</div>
 					<div>
-						<img src="/images/yeti2.png" alt="yeti" />
+						<img src="/images/newsGram.jpg" alt="yeti" />
 					</div>
 					<div>
-						<img src="/images/yeti2.png" alt="yeti" />
-					</div>
-					<div>
-						<img src="/images/yeti2.png" alt="yeti" />
+						<img src="/images/SajiloPay.jpg" alt="yeti" />
 					</div>
 				</Slider>
 			</div>
