@@ -9,6 +9,7 @@ export default function RecentWorks() {
 			mirrorImage: "/images/itahari_mirror.jpg",
 			title: "Rebranding & Website for Itahari Medical",
 			work: "Re-Branding | UI/UX",
+			name: "Itahari Medical",
 			slug: "itahari",
 		},
 		{
@@ -17,6 +18,7 @@ export default function RecentWorks() {
 			mirrorImage: "/images/vyayam_mirror.jpg",
 			title: "Identity Design for Active Wear Brand based in Nepal",
 			work: "Branding",
+			name: "Vyayam",
 			slug: "vyayam",
 		},
 		{
@@ -25,6 +27,7 @@ export default function RecentWorks() {
 			mirrorImage: "/images/YetiYap_mirror.jpg",
 			title: "Identity Design for Nepal's First Viral News Site",
 			work: "Branding | Website | UI/UX",
+			name: "YetiYap",
 			slug: "yetiyap",
 		},
 	];
@@ -32,7 +35,14 @@ export default function RecentWorks() {
 	return (
 		<>
 			{cards.map((el) => (
-				<Card image={el.image} mirrorImage={el.mirrorImage} slug={el.slug} title={el.title} work={el.work} />
+				<Card
+					image={el.image}
+					mirrorImage={el.mirrorImage}
+					slug={el.slug}
+					name={el.name}
+					title={el.title}
+					work={el.work}
+				/>
 			))}
 		</>
 	);

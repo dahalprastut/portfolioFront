@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import { animateCardVariants } from "./../../utils/utils";
 import useMousePosition from "../../utils/useMousePosition";
 
-export default function Card({ image, mirrorImage, slug, title, work }) {
+export default function Card({ image, mirrorImage, slug, title, work, name }) {
 	const container = useRef();
 	const controls = useAnimation();
 	const [ref, inView] = useInView();
@@ -54,7 +54,7 @@ export default function Card({ image, mirrorImage, slug, title, work }) {
 					</div>
 
 					<div className="bottom-des">
-						<strong>YetiYap</strong>
+						<strong>{name}</strong>
 						<h2>{title}</h2>
 						<span>{work}</span>
 					</div>

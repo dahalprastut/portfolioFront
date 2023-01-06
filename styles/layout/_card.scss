@@ -75,5 +75,9 @@
 		.bottom-des {
 			padding: 0 2rem;
 		}
+
+		.outer-image:hover .cursor-change {
+			display: none;
+		}
 	}
 }

@@ -41,7 +41,7 @@ export default class Responsive extends Component {
 						<img src="/images/Parentiv.jpg" alt="yeti" />
 					</div>
 					<div>
-						<img src="/images/newsGram.jpg" alt="yeti" />
+						<img src="/images/NewsGram.jpg" alt="yeti" />
 					</div>
 					<div>
 						<img src="/images/SajiloPay.jpg" alt="yeti" />

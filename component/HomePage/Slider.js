@@ -57,13 +57,19 @@ export default function VerticalMode() {
 			></div>
 			<Slider {...settings}>
 				<div onMouseEnter={() => onHover("0")} onMouseLeave={onLeave}>
-					<h1>Identity & Branding</h1>
+					<h1>
+						Identity & <br /> Branding
+					</h1>
 				</div>
 				<div onMouseEnter={() => onHover("1")} onMouseLeave={onLeave}>
-					<h1>User Interface</h1>
+					<h1>
+						User <br /> Interface
+					</h1>
 				</div>
 				<div onMouseEnter={() => onHover("2")} onMouseLeave={onLeave}>
-					<h1>User Experience</h1>
+					<h1>
+						User <br /> Experience
+					</h1>
 				</div>
 			</Slider>
 		</div>

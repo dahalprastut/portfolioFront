@@ -102,6 +102,9 @@
 		font-size: 2.4rem;
 		margin-top: 4rem;
 	}
+	.outer-single_image {
+		@include m-t-300;
+	}
 
 	@media (max-width: $md-width) {
 		.outer-single_image {
@@ -114,39 +117,34 @@
 
 	.single-image {
 		background: url("../../public/images/yetiInsta.jpg") top center fixed;
+		background-size: cover !important;
 		height: 80vh;
 		width: 100%;
 		margin-top: 5rem;
 		margin-bottom: 5rem;
 
 		@media (max-width: $md-width) {
-			height: 40vh;
+			max-height: 40vh;
 		}
 	}
 
 	.single-image-itahari {
 		background: url("../../public/images/itahariSingle.jpg") top center fixed;
-		background-size: cover;
 	}
 	.single-image-itahari-two {
 		background: url("../../public/images/itahariSingleTwo.jpg") top center fixed;
-		background-size: cover;
 	}
 	.single-image-itahari-three {
 		background: url("../../public/images/itahariSingleThree.jpg") top center;
-		background-size: cover;
 	}
 
 	.single-image-vyayam {
 		background: url("../../public/images/vyayamSingle.jpg") top center fixed;
-		background-size: cover;
 	}
 	.single-image-vyayam-two {
 		background: url("../../public/images/vyayamSingleTwo.jpg") top center fixed;
-		background-size: cover;
 	}
 	.single-image-vyayam-three {
 		background: url("../../public/images/vyayamSingleThree.jpg") top center;
-		background-size: cover;
 	}
 }

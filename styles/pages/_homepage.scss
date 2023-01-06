@@ -117,8 +117,9 @@ article {
 
 .parallax {
 	background: url("../../public/images/yetiBanner.png") top center fixed;
+	background-size: cover !important;
 	height: 100vh;
-	width: 100%;
+	max-width: 100%;
 	margin: 25rem 0;
 
 	@media (max-width: $lg-width) {
@@ -132,7 +133,7 @@ article {
 
 	@media (max-width: $sm-width) {
 		margin: 10rem 0;
-		height: 30vh;
+		max-height: 30vh;
 	}
 }
 

@@ -52,7 +52,11 @@ export default function HiddenNav({ backgroundColor, textColor, toggleClose }) {
 	];
 
 	const getClassName = (route) => {
-		return router.pathname == route ? "active" : "";
+		return router.pathname == route
+			? "active"
+			: router.pathname.includes("projects") && route.includes("projects")
+			? "active"
+			: "";
 	};
 
 	return (
