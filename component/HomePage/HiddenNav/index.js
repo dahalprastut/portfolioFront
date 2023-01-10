@@ -73,7 +73,7 @@ export default function HiddenNav({ backgroundColor, textColor, toggleClose }) {
 				<div className="center">
 					<div className="hidden-nav__top">
 						<h5>
-							<Link href="/" passHref>
+							<Link href="/" scroll={false} passHref>
 								<a>Samar Adhikari</a>
 							</Link>
 						</h5>
@@ -93,7 +93,7 @@ export default function HiddenNav({ backgroundColor, textColor, toggleClose }) {
 							{routes.map((el) => {
 								return (
 									<motion.li key={el.pathname} variants={linkVariants}>
-										<Link href={el.pathname} passHref>
+										<Link href={el.pathname} scroll={false} passHref>
 											<a className={getClassName(el.pathname)}>{el.name}</a>
 										</Link>
 									</motion.li>

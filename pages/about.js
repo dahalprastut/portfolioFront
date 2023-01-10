@@ -5,18 +5,26 @@ import Head from "../component//Head";
 import Nav from "../component/HomePage/Nav";
 import AboutSection from "../component/HomePage/AboutSection";
 import Social from "../component/HomePage/Social";
-import { sectionVariants, topBgVariants } from "../utils/utils";
+import { sectionVariants, onChangeVariants, topBgVariants } from "../utils/utils";
 import useNav from "../utils/useNav";
 
 export default function About({ primaryColor, secondaryColor }) {
 	const [showHiddenNav, setShowHiddenNav, openHandler, closeHandler] = useNav();
 	return (
 		<motion.div
+			className="home"
 			exit={{
 				opacity: 0,
-				transition: { duration: 0.2 },
+				transition: { duration: 0.2, when: "afterChildren" },
 			}}
 		>
+			<motion.div
+				className="initialRendering"
+				variants={onChangeVariants}
+				initial="hidden"
+				animate="visible"
+				exit="exit"
+			></motion.div>
 			<Head />
 			<motion.div variants={topBgVariants} initial="hidden" animate="visible" className="top bg-primary">
 				<Nav

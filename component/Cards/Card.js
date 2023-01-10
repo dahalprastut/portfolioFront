@@ -34,7 +34,7 @@ export default function Card({ image, mirrorImage, slug, title, work, name }) {
 
 	return (
 		<motion.div className="card" ref={ref} variants={animateCardVariants} initial="hidden" animate={controls}>
-			<Link href={`/projects/${slug}`}>
+			<Link href={`/projects/${slug}`} scroll={false}>
 				<a>
 					<div
 						className="outer-image"

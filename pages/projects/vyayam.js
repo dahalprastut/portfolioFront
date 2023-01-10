@@ -1,6 +1,6 @@
 // rename file name to [id].js
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Marquee from "../../component/@core/Marquee";
 import Pagination from "../../component/@core/Pagination";
@@ -8,7 +8,7 @@ import Head from "../../component//Head";
 import Nav from "../../component/HomePage/Nav";
 import Social from "../../component/HomePage/Social";
 import Content from "../../component/Detail/ContentVyayam";
-import { sectionVariants, topBgVariants } from "../../utils/utils";
+import { sectionVariants, onChangeVariants, topBgVariants } from "../../utils/utils";
 import useNav from "../../utils/useNav";
 
 export default function ProjectDetail({ primaryColor, secondaryColor }) {
@@ -18,9 +18,16 @@ export default function ProjectDetail({ primaryColor, secondaryColor }) {
 		<motion.div
 			exit={{
 				opacity: 0,
-				transition: { duration: 1 },
+				transition: { duration: 1, when: "afterChildren" },
 			}}
 		>
+			<motion.div
+				className="initialRendering"
+				variants={onChangeVariants}
+				initial="hidden"
+				animate="visible"
+				exit="exit"
+			></motion.div>
 			<Head />
 
 			<motion.div variants={topBgVariants} initial="hidden" animate="visible">
@@ -39,7 +46,7 @@ export default function ProjectDetail({ primaryColor, secondaryColor }) {
 						<div className="center">
 							<div className="title-intro">
 								<h3>Vyayam</h3>
-								<h1>Creating Identity Design for active wear brand based in Nepal</h1>
+								<h1>Identity Design for active wear brand based in Nepal</h1>
 								<div className="about-client">
 									<div>
 										<span>Client</span>

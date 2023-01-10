@@ -34,16 +34,16 @@ export default function Pagination({ index = 2, maxProjects = 3 }) {
 	const clickHandler = (index, pos) => {
 		// Go to next page / Prev page
 		if (index == 3) {
-			router.push("/projects/vyayam");
+			router.push("/projects/vyayam", undefined, { scroll: false });
 		}
 		if (index == 1) {
-			router.push("/projects/vyayam");
+			router.push("/projects/vyayam", undefined, { scroll: false });
 		}
 		if (index == 2) {
 			if (pos == "prev") {
-				router.push("/projects/itahari");
+				router.push("/projects/itahari", undefined, { scroll: false });
 			} else {
-				router.push("/projects/yetiyap");
+				router.push("/projects/yetiyap", undefined, { scroll: false });
 			}
 		}
 	};

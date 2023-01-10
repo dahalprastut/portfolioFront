@@ -8,7 +8,7 @@ import Head from "../../component//Head";
 import Nav from "../../component/HomePage/Nav";
 import Social from "../../component/HomePage/Social";
 import Content from "../../component/Detail/Content";
-import { sectionVariants, topBgVariants } from "../../utils/utils";
+import { sectionVariants, onChangeVariants, topBgVariants } from "../../utils/utils";
 import useNav from "../../utils/useNav";
 
 export default function ProjectDetail({ primaryColor, secondaryColor }) {
@@ -18,9 +18,16 @@ export default function ProjectDetail({ primaryColor, secondaryColor }) {
 		<motion.div
 			exit={{
 				opacity: 0,
-				transition: { duration: 1 },
+				transition: { duration: 1, when: "afterChildren" },
 			}}
 		>
+			<motion.div
+				className="initialRendering"
+				variants={onChangeVariants}
+				initial="hidden"
+				animate="visible"
+				exit="exit"
+			></motion.div>
 			<Head />
 
 			<motion.div variants={topBgVariants} initial="hidden" animate="visible">

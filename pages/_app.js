@@ -3,32 +3,28 @@ import { AnimatePresence, transform } from "framer-motion";
 import useMousePosition from "../utils/useMousePosition";
 
 function MyApp({ Component, pageProps, router }) {
-  const { mouseX, mouseY } = useMousePosition();
+	const { mouseX, mouseY } = useMousePosition();
 
-  const primaryColor = "#000";
-  const secondaryColor = "#fff";
+	const primaryColor = "#000";
+	const secondaryColor = "#fff";
 
-  const innerProps = {
-    primaryColor,
-    secondaryColor,
-  };
+	const innerProps = {
+		primaryColor,
+		secondaryColor,
+	};
 
-  return (
-    <AnimatePresence exitBeforeEnter>
-      <div
-        className="mouse-follow"
-        style={{
-          left: mouseX,
-          top: mouseY,
-        }}
-      ></div>
-      <Component
-        {...pageProps}
-        key={router.route}
-        {...innerProps}
-      />
-    </AnimatePresence>
-  );
+	return (
+		<AnimatePresence exitBeforeEnter onExitComplete={() => window.scrollTo(0, 0)}>
+			<div
+				className="mouse-follow"
+				style={{
+					left: mouseX,
+					top: mouseY,
+				}}
+			></div>
+			<Component {...pageProps} key={router.route} {...innerProps} />
+		</AnimatePresence>
+	);
 }
 
 export default MyApp;

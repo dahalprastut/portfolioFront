@@ -93,3 +93,23 @@ img {
 .text-right {
 	text-align: right;
 }
+
+.cursor-change {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 1);
+	color: #fff;
+	border-radius: 100%;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	text-align: center;
+	line-height: 20px;
+	width: 100px;
+	display: none;
+	z-index: 100;
+}
+
+html {
+	scroll-behavior: auto !important;
+}

@@ -13,6 +13,7 @@ export const sectionVariants = {
 			duration: 0.1,
 			type: "tween",
 			ease: "easeInOut",
+			delay: 1,
 		},
 	},
 	exit: {
@@ -26,6 +27,30 @@ export const sectionVariants = {
 	},
 };
 
+export const onChangeVariants = {
+	hidden: { top: "-200vh" },
+	visible: {
+		top: ["-150vh", "-100vh", "100vh", "200vh"],
+		height: ["100vh", "100vh", "100vh", "100vh", "0vh"],
+		transition: {
+			duration: 1.2,
+			type: "tween",
+			ease: "easeOut",
+			// delay: 2,
+		},
+	},
+	exit: {
+		top: ["-200vh", "-100vh", "100vh", "200vh"],
+		height: ["100vh", "100vh", "100vh", "100vh", "0vh"],
+		transition: {
+			duration: 1.2,
+			type: "tween",
+			ease: "easeOut",
+			// delay: 2,
+		},
+	},
+};
+
 export const topBgVariants = {
 	hidden: { opacity: 0 },
 	visible: {
@@ -34,6 +59,7 @@ export const topBgVariants = {
 			duration: 0.1,
 			type: "tween",
 			ease: "easeInOut",
+			delay: 0.7,
 		},
 	},
 };

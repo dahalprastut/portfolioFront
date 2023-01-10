@@ -18,7 +18,7 @@ export default function Contact({ primaryColor, secondaryColor }) {
 			}}
 		>
 			<Head />
-			<motion.div variants={topBgVariants} initial="hidden" animate="visible">
+			<motion.div variants={topBgVariants} initial="hidden" animate="visible" exit="exit">
 				<Nav
 					backgroundColor={secondaryColor}
 					textColor={primaryColor}

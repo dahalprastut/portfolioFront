@@ -5,7 +5,7 @@ import Head from "../../component//Head";
 import Nav from "../../component/HomePage/Nav";
 import RecentWorks from "../../component/HomePage/RecentWorks";
 import Social from "../../component/HomePage/Social";
-import { sectionVariants, topBgVariants } from "../../utils/utils";
+import { sectionVariants, onChangeVariants, topBgVariants } from "../../utils/utils";
 import useNav from "../../utils/useNav";
 
 export default function Projects({ primaryColor, secondaryColor }) {
@@ -14,9 +14,15 @@ export default function Projects({ primaryColor, secondaryColor }) {
 		<motion.div
 			exit={{
 				opacity: 0,
-				transition: { duration: 1 },
+				transition: { duration: 1, when: "afterChildren" },
 			}}
 		>
+			<motion.div
+				className="initialRendering"
+				variants={onChangeVariants}
+				initial="hidden"
+				animate="visible"
+			></motion.div>
 			<Head />
 			<motion.div variants={topBgVariants} initial="hidden" animate="visible">
 				<Nav

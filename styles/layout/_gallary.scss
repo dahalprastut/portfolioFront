@@ -1,6 +1,16 @@
 /* the slides */
-.gallary .slick-slide {
-	margin: 0 15px;
+
+.gallary .shown-cursor {
+	display: flex;
+}
+
+.gallary .slick-slide > div > div {
+	padding: 0 15px;
+	outline: none;
+}
+
+.gallary .slick-slide:hover > div > div {
+	cursor: none;
 }
 
 /* the parent */
