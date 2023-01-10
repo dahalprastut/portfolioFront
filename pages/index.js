@@ -28,7 +28,7 @@ export default function Home({ primaryColor, secondaryColor }) {
 				variants={onChangeVariants}
 				initial="hidden"
 				animate="visible"
-				exit="exit"
+				// exit="exit"
 			></motion.div>
 			<Head />
 			<motion.div variants={topBgVariants} initial="hidden" animate="visible" className="top bg-primary">

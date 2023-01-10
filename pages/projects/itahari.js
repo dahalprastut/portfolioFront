@@ -18,7 +18,7 @@ export default function ProjectDetail({ primaryColor, secondaryColor }) {
 		<motion.div
 			exit={{
 				opacity: 0,
-				transition: { duration: 1, when: "afterChildren" },
+				transition: { duration: 1, when: "beforeChildren" },
 			}}
 		>
 			<Head />
@@ -28,7 +28,7 @@ export default function ProjectDetail({ primaryColor, secondaryColor }) {
 				variants={onChangeVariants}
 				initial="hidden"
 				animate="visible"
-				exit="exit"
+				// exit="exit"
 			></motion.div>
 
 			<motion.div variants={topBgVariants} initial="hidden" animate="visible">

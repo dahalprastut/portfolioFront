@@ -28,27 +28,27 @@ export const sectionVariants = {
 };
 
 export const onChangeVariants = {
-	hidden: { top: "-200vh" },
+	hidden: { top: "-150vh" },
 	visible: {
 		top: ["-150vh", "-100vh", "100vh", "200vh"],
-		height: ["100vh", "100vh", "100vh", "100vh", "0vh"],
+		height: ["100vh", "100vh", "100vh", "0vh"],
 		transition: {
-			duration: 1.2,
+			duration: 1.4,
 			type: "tween",
 			ease: "easeOut",
 			// delay: 2,
 		},
 	},
-	exit: {
-		top: ["-200vh", "-100vh", "100vh", "200vh"],
-		height: ["100vh", "100vh", "100vh", "100vh", "0vh"],
-		transition: {
-			duration: 1.2,
-			type: "tween",
-			ease: "easeOut",
-			// delay: 2,
-		},
-	},
+	// exit: {
+	// 	top: ["-150vh", "-100vh", "100vh", "200vh"],
+	// 	height: ["100vh", "100vh", "100vh", "100vh", "0vh"],
+	// 	transition: {
+	// 		duration: 1.4,
+	// 		type: "tween",
+	// 		ease: "easeOut",
+	// 		// delay: 2,
+	// 	},
+	// },
 };
 
 export const topBgVariants = {

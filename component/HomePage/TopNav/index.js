@@ -17,7 +17,7 @@ export default function TopNav({ textColor, toggleOpen }) {
 				<div className="navigation__link">
 					<div className="hire-btn">
 						{/* <Link className="btn-round" href="#"> */}
-						<Button className="btn-round" href="mailto:samar.adhikari@gmail.com" text={"Hire Me"} />
+						<Button className="btn-round" href="mailto:hello@samaradhikari.com" text={"Hire Me"} />
 						{/* </Link> */}
 					</div>
 

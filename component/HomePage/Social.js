@@ -5,7 +5,7 @@ export default function Social() {
 	return (
 		<div className="social">
 			<h4>Wanna start a project? Say Hii</h4>
-			<h1>samar.adhikari77@gmail.com</h1>
+			<h1>hello@samaradhikari.com</h1>
 			<div className="social__links">
 				<a className="text-up" href="#">
 					<small>Behance</small> <small>Behance</small>
@@ -23,7 +23,7 @@ export default function Social() {
 				</a>
 			</div>
 
-			<Credits />
+			{/* <Credits /> */}
 		</div>
 	);
 }
