@@ -1,34 +1,31 @@
 import React, { useRef } from "react";
-import Slider from "react-slick";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 import useMousePosition from "../../utils/useMousePosition";
 
 export function ResponsiveSlider() {
 	const hoverdState = useRef(null);
 	const { mouseX, mouseY } = useMousePosition();
 	var settings = {
-		dots: false,
+		perPage: 4,
 		arrows: false,
-		infinite: true,
-		autoplay: true,
-		speed: 500,
-		adaptiveWidth: true,
-		adaptiveHeight: true,
-		className: "slider variable-width",
-		slidesToShow: 4,
-		responsive: [
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 2,
-				},
+		// autoWidth: true,
+		type: "loop",
+		pagination: false,
+		drag: "free",
+		gap: "3em",
+		easing: "ease",
+		breakpoints: {
+			1024: {
+				perPage: 3,
 			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1,
-				},
+			767: {
+				perPage: 2,
 			},
-		],
+			640: {
+				perPage: 1,
+			},
+		},
 	};
 
 	const onHover = () => {
@@ -49,23 +46,43 @@ export function ResponsiveSlider() {
 			>
 				Drag
 			</div>
-			<Slider {...settings}>
-				<div onMouseEnter={() => onHover()} onMouseLeave={onLeave}>
-					<img src="/images/meroGame.jpg" alt="yeti" />
-				</div>
-				<div onMouseEnter={() => onHover()} onMouseLeave={onLeave}>
-					<img src="/images/hamroStar.jpg" alt="yeti" />
-				</div>
-				<div onMouseEnter={() => onHover()} onMouseLeave={onLeave}>
-					<img src="/images/Parentiv.jpg" alt="yeti" />
-				</div>
-				<div onMouseEnter={() => onHover()} onMouseLeave={onLeave}>
-					<img src="/images/NewsGram.jpg" alt="yeti" />
-				</div>
-				<div onMouseEnter={() => onHover()} onMouseLeave={onLeave}>
-					<img src="/images/SajiloPay.jpg" alt="yeti" />
-				</div>
-			</Slider>
+			<Splide options={settings} onMouseEnter={() => onHover()} onMouseLeave={onLeave}>
+				<SplideSlide>
+					<div>
+						<img src="/images/meroGame.jpg" alt="yeti" />
+					</div>
+				</SplideSlide>
+				<SplideSlide>
+					<div>
+						<img src="/images/hamroStar.jpg" alt="yeti" />
+					</div>
+				</SplideSlide>
+				<SplideSlide>
+					<div>
+						<img src="/images/ng.jpg" alt="yeti" />
+					</div>
+				</SplideSlide>
+				<SplideSlide>
+					<div>
+						<img src="/images/SajiloPay.jpg" alt="yeti" />
+					</div>
+				</SplideSlide>
+				<SplideSlide>
+					<div>
+						<img src="/images/remit.jpg" alt="yeti" />
+					</div>
+				</SplideSlide>
+				<SplideSlide>
+					<div>
+						<img src="/images/kaancha.jpg" alt="yeti" />
+					</div>
+				</SplideSlide>
+				<SplideSlide>
+					<div>
+						<img src="/images/galaxy.jpg" alt="yeti" />
+					</div>
+				</SplideSlide>
+			</Splide>
 		</div>
 	);
 }
