@@ -51,7 +51,7 @@ export default function ProjectDetail({ primaryColor, secondaryColor }) {
 								<div className="about-client">
 									<div>
 										<span>Client</span>
-										<h4>YetiYap</h4>
+										<h4>Itahari Medical</h4>
 									</div>
 									<div>
 										<span>Responsibility</span>
@@ -64,6 +64,7 @@ export default function ProjectDetail({ primaryColor, secondaryColor }) {
 				)}
 			</AnimatePresence>
 			<div className="parallax parallax-itahari"></div>
+
 			<Content />
 
 			<div className="button-wrapper">

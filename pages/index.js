@@ -53,7 +53,7 @@ export default function Home({ primaryColor, secondaryColor }) {
 						<div className="title">
 							<div>
 								<p>
-									Hello I am
+									Hello! I am
 									<strong> Samar Adhikari</strong> & I specialize in
 								</p>
 								<Slider />

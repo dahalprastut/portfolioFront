@@ -140,6 +140,15 @@ export default function Content() {
 					</div>
 					<div className="parallax vyayam-parallax-four"></div>
 				</div>
+				<h4 className="text-center">
+					<a
+						href="https://www.behance.net/gallery/158728227/Vyayam-Brand-Identity"
+						className="dsl-r bold"
+						target="_blank"
+					>
+						View Full CASE STUDY
+					</a>
+				</h4>
 			</div>
 		</div>
 	);

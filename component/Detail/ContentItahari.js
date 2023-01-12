@@ -125,6 +125,15 @@ export default function Content() {
 					</div>
 					<div className="parallax itahari-parallax-three"></div>
 				</div>
+				<h4 className="text-center">
+					<a
+						href="https://www.behance.net/gallery/149881631/Itahari-Medical-Rebranding-Website"
+						className="dsl-r bold"
+						target="_blank"
+					>
+						View Full CASE STUDY
+					</a>
+				</h4>
 			</div>
 		</div>
 	);

@@ -90,6 +90,15 @@ export default function Content() {
 						</div>
 					</div>
 				</div>
+				<h4 className="text-center">
+					<a
+						href="https://www.behance.net/gallery/131626099/YetiYap-Logo-Identity-Design"
+						className="dsl-r bold"
+						target="_blank"
+					>
+						View Full CASE STUDY
+					</a>
+				</h4>
 			</div>
 		</div>
 	);

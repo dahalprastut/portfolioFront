@@ -1,5 +1,5 @@
 .pagination {
-	margin-top: 30rem;
+	@include m-t-300;
 	button {
 		background-color: transparent;
 		font-family: blackEme;

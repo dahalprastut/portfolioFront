@@ -1,7 +1,6 @@
 import "../styles/app.scss";
 import { AnimatePresence, transform } from "framer-motion";
 import useMousePosition from "../utils/useMousePosition";
-
 function MyApp({ Component, pageProps, router }) {
 	const { mouseX, mouseY } = useMousePosition();
 

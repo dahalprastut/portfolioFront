@@ -148,3 +148,11 @@
 		background: url("../../public/images/vyayamSingleThree.jpg") top center;
 	}
 }
+
+@media (max-width: $sm-width) {
+	.content_wrapper {
+		.double-image .center .outer-image {
+			height: auto !important;
+		}
+	}
+}
