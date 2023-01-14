@@ -102,6 +102,12 @@
 		font-size: 2.4rem;
 		margin-top: 4rem;
 	}
+
+	@media (max-width: $sm-width) {
+		.description {
+			font-size: 1.8rem;
+		}
+	}
 	.outer-single_image {
 		@include m-t-300;
 	}

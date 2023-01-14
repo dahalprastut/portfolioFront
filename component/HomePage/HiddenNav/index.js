@@ -45,10 +45,10 @@ export default function HiddenNav({ backgroundColor, textColor, toggleClose }) {
 	];
 
 	const socialLinks = [
-		{ name: "Behance", link: "#" },
-		{ name: "Dribble", link: "#" },
-		{ name: "Facebook", link: "#" },
-		{ name: "Instagram", link: "#" },
+		{ name: "Behance", link: "https://www.behance.net/samaradhikaad2" },
+		{ name: "Dribble", link: "https://dribbble.com/samar_adh/collections" },
+		{ name: "Facebook", link: "https://www.facebook.com/samar.adhikari1" },
+		{ name: "Instagram", link: "https://www.instagram.com/samar_adh/" },
 	];
 
 	const getClassName = (route) => {
@@ -106,7 +106,7 @@ export default function HiddenNav({ backgroundColor, textColor, toggleClose }) {
 								<div className="social-sites">
 									{socialLinks.map((el) => {
 										return (
-											<a className="text-up" href={el.link} key={el.name}>
+											<a className="text-up" href={el.link} target="_blank" key={el.name}>
 												<small>{el.name}</small>
 												<small>{el.name}</small>
 											</a>
@@ -116,7 +116,7 @@ export default function HiddenNav({ backgroundColor, textColor, toggleClose }) {
 							</div>
 							<div className="mail">
 								<h3>Say Hi</h3>
-								<span>samar.adhikari@gmail.com</span>
+								<span>hello@samaradhikar.com</span>
 							</div>
 						</motion.div>
 					</BottomNavStyled>

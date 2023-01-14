@@ -90,13 +90,13 @@ export default function Content() {
 						</div>
 					</div>
 				</div>
-				<h4 className="text-center">
+				<h4 className="text-center fnt-2">
 					<a
 						href="https://www.behance.net/gallery/131626099/YetiYap-Logo-Identity-Design"
 						className="dsl-r bold"
 						target="_blank"
 					>
-						View Full CASE STUDY
+						View Full Case Study
 					</a>
 				</h4>
 			</div>

@@ -123,6 +123,12 @@ article {
 			font-size: 1.4rem;
 		}
 
+		@media (max-width: $sm-width) {
+			span {
+				font-size: 1rem;
+			}
+		}
+
 		> div:last-child {
 			margin-left: 12rem;
 		}

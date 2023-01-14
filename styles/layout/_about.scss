@@ -68,8 +68,12 @@
 			}
 
 			p {
-				margin-top: 7rem;
+				margin-top: 2rem;
 				font-size: 1.6rem;
+
+				&:first-child {
+					margin-top: 7rem;
+				}
 			}
 		}
 		.skills {

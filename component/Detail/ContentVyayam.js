@@ -140,13 +140,13 @@ export default function Content() {
 					</div>
 					<div className="parallax vyayam-parallax-four"></div>
 				</div>
-				<h4 className="text-center">
+				<h4 className="text-center fnt-2">
 					<a
 						href="https://www.behance.net/gallery/158728227/Vyayam-Brand-Identity"
 						className="dsl-r bold"
 						target="_blank"
 					>
-						View Full CASE STUDY
+						View Full Case Study
 					</a>
 				</h4>
 			</div>

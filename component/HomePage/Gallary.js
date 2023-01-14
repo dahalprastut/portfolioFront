@@ -64,11 +64,6 @@ export function ResponsiveSlider() {
 				</SplideSlide>
 				<SplideSlide>
 					<div>
-						<img src="/images/SajiloPay.jpg" alt="yeti" />
-					</div>
-				</SplideSlide>
-				<SplideSlide>
-					<div>
 						<img src="/images/remit.jpg" alt="yeti" />
 					</div>
 				</SplideSlide>
