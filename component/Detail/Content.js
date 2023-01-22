@@ -10,7 +10,7 @@ export default function Content() {
 						<div>
 							<p>
 								YetiYap is an online media company whose primary focus is to provide youth with viral
-								news and entertainment contents. The main goal is to provide young audiences with
+								news and entertainment content. The main goal is to provide young audiences with
 								infotainment and entertainment content.
 							</p>
 						</div>
@@ -20,12 +20,13 @@ export default function Content() {
 					<div className="parallax yeti-parallax-two"></div>
 					<div className="inside-content">
 						<div className="center">
-							<h2>The challenge</h2>
+							<h2>The Challenge</h2>
 							<div>
 								<p>
 									Being a pioneer, Yetiyap has to conceive a strong impact on the youth by being
-									distinctive from the mainstream news websites. The identity system has to be fresh
-									and unique to create a lasting and Imemorable impression.
+									distinctive from mainstream news websites. The identity system has to be fresh and
+									unique to create a lasting and memorable impression. The website needed to be
+									eye-catching with easy-to-read content.
 								</p>
 							</div>
 						</div>
@@ -34,7 +35,7 @@ export default function Content() {
 						<div className="center">
 							<div>
 								<div className="outer-image">
-									<img src="/images/yeti2.png" alt="yeti" />
+									<img src="/images/yetiyap/yeti-13.jpg" alt="yeti" />
 								</div>
 
 								{/* <div className="description">Identity Design</div> */}
@@ -42,7 +43,7 @@ export default function Content() {
 
 							<div>
 								<div className="outer-image">
-									<img src="/images/staion@2x.png" alt="yeti" />
+									<img src="/images/yetiyap/yeti-14.jpg" alt="yeti" />
 								</div>
 								{/* <div className="description">Identity Design</div> */}
 							</div>
@@ -54,32 +55,21 @@ export default function Content() {
 								<h2>Solution</h2>
 								<div>
 									<p>
-										On clarification of the requirements, I went with a Talking Yeti mascot as the
-										identity of Yetiyap. The Yeti references an old Nepali legend snow monster in
-										the Himalayas (Abominable Snowman) and Yap references talking.
+										Our team was excellent when it came to client handling. We made sure we
+										understood the requirements and started our work on website design from Adobe
+										XD. We constantly communicated with the client and closely listened to the
+										feedback.
 										<br />
-										<br /> I designed a fun Talking Yeti mascot with bright and bold colors for the
-										brand.
+										<br /> After a couple of hit-and-trails, the client was satisfied with the
+										design and I took charge of the development process. Since the client wanted
+										subtle animations on the website, I stuck with GSAP for the animations. I also
+										wrote custom CSS code since it was one of those projects which needed a lot of
+										changes along the way – and I made sure it was easy to make such changes. I also
+										focused a lot on mobile design in this project since most of the client's user
+										base was mobile users. Therefore, I had to go with a “mobile first” approach in
+										designing the website.
 									</p>
 								</div>
-							</div>
-						</div>
-					</div>
-					<div className="double-image">
-						<div className="center">
-							<div>
-								<div className="outer-image">
-									<img src="/images/YetiYap_mirror.jpg" alt="yeti" />
-								</div>
-
-								{/* <div className="description">Identity Design</div> */}
-							</div>
-
-							<div>
-								<div className="outer-image">
-									<img src="/images/YetiYap.png" alt="yeti" />
-								</div>
-								{/* <div className="description">Identity Design</div> */}
 							</div>
 						</div>
 					</div>
@@ -91,12 +81,8 @@ export default function Content() {
 					</div>
 				</div>
 				<h4 className="text-center fnt-2">
-					<a
-						href="https://www.behance.net/gallery/131626099/YetiYap-Logo-Identity-Design"
-						className="dsl-r bold"
-						target="_blank"
-					>
-						View Full Case Study
+					<a href="https://yetiyap.com/" className="dsl-r bold" target="_blank">
+						View Website
 					</a>
 				</h4>
 			</div>

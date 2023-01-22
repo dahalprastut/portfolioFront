@@ -9,60 +9,57 @@ export default function AboutSection({ color }) {
 	return (
 		<div className="about">
 			<div className="about-des">
-				<h2>Multidicpilinary Designer with more than 5 years of experience in Digital Design</h2>
+				<h2>
+					Multidisciplinary Web Developer with more than 4 years of experience in Front End Web Development
+				</h2>
 				<div className="des-right">
 					<p>
-						My name is Samar Adhikari and I am a highly experienced designer with a whopping five whole
-						years under my belt. I have a passion for combining design and solving real world problems.
+						Hi! I am Prastut Dahal, a 25-year-old Web Developer from Kathmandu Nepal. I am a Computer
+						Science student, currently working with some awesome folks at Seva Development. I specialize in
+						Front End Web Development tools like HTML, CSS, React JS, NEXT JS, and more.
 					</p>
 
 					<p>
-						I specialize in branding, user interface, and user experience design because, honestly, what's
-						the point of being a designer if you can't put "Branding" on your resume? And User Interface and
-						User Experience? Those are just buzzwords that I throw around to sound impressive.
+						I see teaching as a passion and have been teaching Web Development to various college students.
+						But one caution – if you’re looking for a rigid teacher, that’s not me!
 					</p>
 					<p>
-						But in all seriousness, I take my work very seriously and strive to create designs that not only
-						look good, but also effectively solve the problems at hand. So if you're in need of a designer
-						who has a knack for using buzz words like human-based design, emotion-driven experiences, and a
-						questionable sense of humor, look no further! I'm your guy.
+						You can connect with me on LinkedIn. I am always excited to do business with like-minded people.
+						Hope to talk to you soon!
 					</p>
 				</div>
 			</div>
 			<div className="skills">
 				<div>
 					<StrongStyled primary={color}>01</StrongStyled>
-					<h3>User Interface Design</h3>
+					<h3>Design and Mockup</h3>
 					<div className="bottom-skills">
-						<span>Visual Design</span>
-						<span>Layout Design</span>
-						<span>Design Systems</span>
-						<span>Prototyping</span>
-						<span>Interaction Design</span>
-						<span>Motion Design</span>
+						<span>HTML</span>
+						<span>CSS</span>
+						<span>SCSS</span>
+						<span>Responsive Designs</span>
+						<span>Bootstrap</span>
 					</div>
 				</div>
 				<div>
 					<StrongStyled primary={color}>02</StrongStyled>
-					<h3>User Experience Design</h3>
+					<h3>Front End Technologies</h3>
 					<div className="bottom-skills">
-						<span>User Research</span>
-						<span>Usability Testing</span>
-						<span>Wireframing</span>
-						<span>Prototyping</span>
-						<span>Information Architecture</span>
+						<span>Javascript</span>
+						<span>React JS</span>
+						<span>Redux</span>
+						<span>Redux Saga</span>
+						<span>NEXT JS</span>
 					</div>
 				</div>
 				<div>
 					<StrongStyled primary={color}>03</StrongStyled>
-					<h3>Identity Designer</h3>
+					<h3>Back End Technologies</h3>
 					<div className="bottom-skills">
-						<span>Branding</span>
-						<span>Visual Identity Design</span>
-						<span>Logo Design</span>
-						<span>Graphic Design</span>
-						<span>Packaging Design</span>
-						<span>Print Design</span>
+						<span>Javascript</span>
+						<span>Node JS</span>
+						<span>Express JS</span>
+						<span>MongoDB</span>
 					</div>
 				</div>
 			</div>

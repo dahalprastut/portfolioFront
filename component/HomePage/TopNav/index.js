@@ -11,13 +11,13 @@ export default function TopNav({ textColor, toggleOpen }) {
 				<h5>
 					{" "}
 					<Link href="/" scroll={false} passHref>
-						<a style={{ color: textColor }}>Samar Adhikari</a>
+						<a style={{ color: textColor }}>Prastut Dahal</a>
 					</Link>
 				</h5>
 				<div className="navigation__link">
 					<div className="hire-btn">
 						{/* <Link className="btn-round" href="#"> */}
-						<Button className="btn-round" href="mailto:hello@samaradhikari.com" text={"Hire Me"} />
+						<Button className="btn-round" href="mailto:dahalprastut@gmail.com" text={"Hire Me"} />
 						{/* </Link> */}
 					</div>
 

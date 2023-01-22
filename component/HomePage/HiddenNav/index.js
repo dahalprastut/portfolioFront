@@ -38,18 +38,13 @@ export default function HiddenNav({ backgroundColor, textColor, toggleClose }) {
 		{ pathname: "/", name: "Home" },
 		{
 			pathname: "/projects",
-			name: "Case Studies",
+			name: "Projects",
 		},
 		{ pathname: "/about", name: "About" },
 		// { pathname: "/contact", name: "Contact" },
 	];
 
-	const socialLinks = [
-		{ name: "Behance", link: "https://www.behance.net/samaradhikaad2" },
-		{ name: "Dribble", link: "https://dribbble.com/samar_adh/collections" },
-		{ name: "Facebook", link: "https://www.facebook.com/samar.adhikari1" },
-		{ name: "Instagram", link: "https://www.instagram.com/samar_adh/" },
-	];
+	const socialLinks = [{ name: "LinkedIn", link: "https://www.linkedin.com/in/prastut-dahal-48b33b1b0/" }];
 
 	const getClassName = (route) => {
 		return router.pathname == route
@@ -74,7 +69,7 @@ export default function HiddenNav({ backgroundColor, textColor, toggleClose }) {
 					<div className="hidden-nav__top">
 						<h5>
 							<Link href="/" scroll={false} passHref>
-								<a>Samar Adhikari</a>
+								<a>Prastut Dahal</a>
 							</Link>
 						</h5>
 						<div className="navigation__link">
@@ -116,7 +111,7 @@ export default function HiddenNav({ backgroundColor, textColor, toggleClose }) {
 							</div>
 							<div className="mail">
 								<h3>Say Hi</h3>
-								<span>hello@samaradhikar.com</span>
+								<span>dahalprastut@gmail.com</span>
 							</div>
 						</motion.div>
 					</BottomNavStyled>
