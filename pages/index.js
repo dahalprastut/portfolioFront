@@ -54,7 +54,7 @@ export default function Home({ primaryColor, secondaryColor }) {
 							<div>
 								<p>
 									Hello! I am
-									<strong> Samar Adhikari</strong> & I specialize in
+									<strong> Prastut Dahal</strong> & I specialize in
 								</p>
 								<Slider />
 							</div>

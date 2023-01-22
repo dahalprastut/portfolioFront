@@ -47,7 +47,7 @@ export default function ProjectDetail({ primaryColor, secondaryColor }) {
 						<div className="center">
 							<div className="title-intro">
 								<h3>Ithari Medical</h3>
-								<h1>Re-brading and Website Design for Itahari Medical</h1>
+								<h1>Website Design and Development for Itahari Medical</h1>
 								<div className="about-client">
 									<div>
 										<span>Client</span>
@@ -55,7 +55,7 @@ export default function ProjectDetail({ primaryColor, secondaryColor }) {
 									</div>
 									<div>
 										<span>Responsibility</span>
-										<h4>Re-Branding | UI/UX</h4>
+										<h4>Website design and development</h4>
 									</div>
 								</div>
 							</div>

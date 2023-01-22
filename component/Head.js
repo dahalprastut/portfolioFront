@@ -4,12 +4,12 @@ import Head from "next/head";
 export default function Header() {
 	return (
 		<Head>
-			<title>Samar Adhikari</title>
+			<title>Prastut Dahal</title>
 			<link rel="preconnect" href="https://fonts.googleapis.com" />
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 			<link rel="preconnect" href="https://fonts.googleapis.com" />
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-			<link rel="icon" href="/images/fav.png" />
+			<link rel="icon" href="/images/favicon.png" />
 			<link
 				href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
 				rel="stylesheet"

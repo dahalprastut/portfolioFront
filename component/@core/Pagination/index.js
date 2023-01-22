@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useRouter } from "next/router";
 import useMousePosition from "../../../utils/useMousePosition";
 
-export default function Pagination({ index = 2, maxProjects = 3 }) {
+export default function Pagination({ index = 2, maxProjects = 4 }) {
 	const router = useRouter();
 	const hoverdState = useRef(null);
 
@@ -10,10 +10,14 @@ export default function Pagination({ index = 2, maxProjects = 3 }) {
 	const onHover = (index, pos) => {
 		hoverdState.current.style.display = "block";
 		if (index == 3) {
-			hoverdState.current.classList.add("vyayam");
+			if (pos == "prev") {
+				hoverdState.current.classList.add("global");
+			} else {
+				hoverdState.current.classList.add("driving");
+			}
 		}
 		if (index == 1) {
-			hoverdState.current.classList.add("vyayam");
+			hoverdState.current.classList.add("global");
 		}
 
 		if (index == 2) {
@@ -23,21 +27,23 @@ export default function Pagination({ index = 2, maxProjects = 3 }) {
 				hoverdState.current.classList.add("yetiyap");
 			}
 		}
+		if (index == 4) {
+			hoverdState.current.classList.add("yetiyap");
+		}
 	};
 	const onLeave = () => {
 		hoverdState.current.style.display = "none";
 		hoverdState.current.classList.remove("yetiyap");
 		hoverdState.current.classList.remove("itahari");
-		hoverdState.current.classList.remove("vyayam");
+		hoverdState.current.classList.remove("global");
+		hoverdState.current.classList.remove("driving");
 	};
 
 	const clickHandler = (index, pos) => {
 		// Go to next page / Prev page
-		if (index == 3) {
-			router.push("/projects/vyayam", undefined, { scroll: false });
-		}
+
 		if (index == 1) {
-			router.push("/projects/vyayam", undefined, { scroll: false });
+			router.push("/projects/globalSmart", undefined, { scroll: false });
 		}
 		if (index == 2) {
 			if (pos == "prev") {
@@ -45,6 +51,17 @@ export default function Pagination({ index = 2, maxProjects = 3 }) {
 			} else {
 				router.push("/projects/yetiyap", undefined, { scroll: false });
 			}
+		}
+		if (index == 3) {
+			if (pos == "prev") {
+				router.push("/projects/globalSmart", undefined, { scroll: false });
+			} else {
+				router.push("/projects/drivingSales", undefined, { scroll: false });
+			}
+		}
+
+		if (index == 4) {
+			router.push("/projects/yetiyap", undefined, { scroll: false });
 		}
 	};
 	return (

@@ -49,32 +49,32 @@ export function ResponsiveSlider() {
 			<Splide options={settings} onMouseEnter={() => onHover()} onMouseLeave={onLeave}>
 				<SplideSlide>
 					<div>
-						<img src="/images/meroGame.jpg" alt="yeti" />
+						<img src="/images/gallery/gs.jpg" alt="yeti" />
 					</div>
 				</SplideSlide>
 				<SplideSlide>
 					<div>
-						<img src="/images/hamroStar.jpg" alt="yeti" />
+						<img src="/images/gallery/gal.jpg" alt="yeti" />
 					</div>
 				</SplideSlide>
 				<SplideSlide>
 					<div>
-						<img src="/images/ng.jpg" alt="yeti" />
+						<img src="/images/gallery/im.jpg" alt="yeti" />
 					</div>
 				</SplideSlide>
 				<SplideSlide>
 					<div>
-						<img src="/images/remit.jpg" alt="yeti" />
+						<img src="/images/gallery/sr.jpg" alt="yeti" />
 					</div>
 				</SplideSlide>
 				<SplideSlide>
 					<div>
-						<img src="/images/kaancha.jpg" alt="yeti" />
+						<img src="/images/gallery/yy.jpg" alt="yeti" />
 					</div>
 				</SplideSlide>
 				<SplideSlide>
 					<div>
-						<img src="/images/galaxy.jpg" alt="yeti" />
+						<img src="/images/gallery/yy2.jpg" alt="yeti" />
 					</div>
 				</SplideSlide>
 			</Splide>

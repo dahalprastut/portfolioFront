@@ -1,4 +1,4 @@
-.social {
+.socialSites {
 	text-align: center;
 	padding-bottom: 3rem;
 	h1 {
@@ -25,7 +25,7 @@
 }
 
 @media (max-width: $lg-width) {
-	.social {
+	.socialSites {
 		h1 {
 			font-size: 4.4rem;
 		}
@@ -39,7 +39,7 @@
 }
 
 @media (max-width: $md-width) {
-	.social {
+	.socialSites {
 		h1 {
 			font-size: 3.8rem;
 		}
@@ -53,7 +53,7 @@
 }
 
 @media (max-width: $sm-width) {
-	.social {
+	.socialSites {
 		h1 {
 			font-size: 2.2rem;
 		}
