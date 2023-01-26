@@ -49,6 +49,24 @@ export default function Content() {
 							</div>
 						</div>
 					</div>
+					<div className="double-image">
+						<div className="center">
+							<div>
+								<div className="outer-image">
+									<img src="/images/yetiyap/yeti-15.jpg" alt="yeti" />
+								</div>
+
+								<div className="description">Mobile View</div>
+							</div>
+
+							<div>
+								<div className="outer-image">
+									<img src="/images/yetiyap/yeti-16.jpg" alt="yeti" />
+								</div>
+								<div className="description">Web View</div>
+							</div>
+						</div>
+					</div>
 					<div className="margin-box">
 						<div className="inside-content">
 							<div className="center">

@@ -48,8 +48,8 @@ export default function About({ primaryColor, secondaryColor }) {
 						<div className="title">
 							<div className="center">
 								<h2>
-									Hello! My name is Samar Adhikari, I'm a Kathmandu based UI/UX designer with more
-									than 5 years of experience.
+									Hello! My name is Prastut, I'm a Front End Web Developer with more than 4 years of
+									experience.
 								</h2>
 							</div>
 						</div>

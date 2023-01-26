@@ -70,13 +70,25 @@ export default function Content() {
 							</div>
 						</div>
 					</div>
-
-					<div className="outer-single_image">
+					<div className="double-image">
 						<div className="center">
-							<div className="single-image single-image-driving"></div>
-							{/* <div className="description">Identity Design</div> */}
+							<div>
+								<div className="outer-image">
+									<img src="/images/driving_sales/drivingsales1.jpg" alt="yeti" />
+								</div>
+
+								{/* <div className="description">Identity Design</div> */}
+							</div>
+
+							<div>
+								<div className="outer-image">
+									<img src="/images/driving_sales/drivingsales.jpg" alt="yeti" />
+								</div>
+								{/* <div className="description">Identity Design</div> */}
+							</div>
 						</div>
 					</div>
+
 					<div className="parallax driving-parallax-three"></div>
 				</div>
 				<h4 className="text-center fnt-2">
