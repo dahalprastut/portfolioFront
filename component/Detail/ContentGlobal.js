@@ -18,23 +18,8 @@ export default function Content() {
 						</div>
 					</div>
 				</div>
-				<div className="double-image">
-					<div className="center">
-						<div>
-							<div className="outer-image">
-								<img src="/images/global_ime/global-11.jpg" alt="yeti" />
-							</div>
-							{/* <div className="description">Identity Design</div> */}
-						</div>
-						<div>
-							<div className="outer-image">
-								<img src="/images/global_ime/global-12.jpg" alt="yeti" />
-							</div>
+				<div className="parallax global-parallax-two"></div>
 
-							{/* <div className="description">Identity Design</div> */}
-						</div>
-					</div>
-				</div>
 				<div className="images-wrapper">
 					<div className="inside-content">
 						<div className="center">
@@ -66,6 +51,23 @@ export default function Content() {
 							</div>
 						</div>
 					</div>
+					<div className="double-image">
+						<div className="center">
+							<div>
+								<div className="outer-image">
+									<img src="/images/global_ime/global-11.jpg" alt="yeti" />
+								</div>
+								{/* <div className="description">Identity Design</div> */}
+							</div>
+							<div>
+								<div className="outer-image">
+									<img src="/images/global_ime/global-12.jpg" alt="yeti" />
+								</div>
+
+								{/* <div className="description">Identity Design</div> */}
+							</div>
+						</div>
+					</div>
 
 					<div className="margin-box">
 						<div className="inside-content">
@@ -84,9 +86,8 @@ export default function Content() {
 							</div>
 						</div>
 					</div>
-
-					<div className="parallax global-parallax-two"></div>
 				</div>
+				<div className="parallax global-parallax-three"></div>
 				<h4 className="text-center fnt-2">
 					<a href="https://globalonline.gibl.com.np/" className="dsl-r bold" target="_blank">
 						View Website

@@ -6,7 +6,7 @@ export default function RecentWorks() {
 		{
 			id: 0,
 			mirrorImage: "/images/image&reflection/im.jpg",
-			image: "/images/image&reflection/hover-10.jpg",
+			image: "/images/image&reflection/im2.jpg",
 			title: "Website Design and Development for Itahari Medical",
 			work: "HTML | SCSS | Vanilla JS | GSAP",
 			name: "Itahari Medical",
@@ -24,7 +24,7 @@ export default function RecentWorks() {
 		{
 			id: 2,
 			mirrorImage: "/images/image&reflection/yy.jpg",
-			image: "/images/image&reflection/hover-09.jpg",
+			image: "/images/image&reflection/yy2.jpg",
 			title: "Website Design and Development for YetiYap",
 			work: "HTML | SCSS | Vanilla JS | GSAP",
 			name: "YetiYap",
@@ -32,8 +32,8 @@ export default function RecentWorks() {
 		},
 		{
 			id: 3,
-			mirrorImage: "/images/image&reflection/ds2.jpg",
-			image: "/images/image&reflection/hover-11.jpg",
+			mirrorImage: "/images/image&reflection/ds.jpg",
+			image: "/images/image&reflection/ds2.jpg",
 			title: "Optimized and refactored codes for the Driving Sales Web App",
 			work: "React | Redux | Saga",
 			name: "DrivingSales",
