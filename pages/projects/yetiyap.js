@@ -67,7 +67,7 @@ export default function ProjectDetail({ primaryColor, secondaryColor }) {
 
 			<div className="button-wrapper">
 				<div className="center">
-					<Pagination index={3} />
+					<Pagination index={4} />
 				</div>
 			</div>
 

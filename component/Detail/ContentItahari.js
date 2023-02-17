@@ -30,6 +30,10 @@ export default function Content() {
 									past and unable to connect to the younger audience. Itahari Medical wanted to give a
 									fresh rebranding and visual structure and make it appealing to the younger target
 									generation.
+									<br /> <br /> The rebranding was being done on the occasion of 25 Years anniversary,
+									so I was tasked with creating a new identity for Itahari Medical, creating a strong
+									presence in social media, designing completely new web experience & launching
+									marketing campaign
 								</p>
 							</div>
 						</div>
@@ -47,12 +51,10 @@ export default function Content() {
 								<h2>Solution</h2>
 								<div>
 									<p>
-										On clarification of the requirements, I went with a Talking Yeti mascot as the
-										identity of Yetiyap. The Yeti references an old Nepali legend snow monster in
-										the Himalayas (Abominable Snowman) and Yap references talking.
-										<br />
-										<br /> I designed a fun Talking Yeti mascot with bright and bold colors for the
-										brand.
+										The Client wanted identity design with a “Plus” sign denoting health. With their
+										slogan “Your Health First” I wanted to incorporate the connection between people
+										and the hospital in the logo. The logo represents connection, harmony and the
+										people.
 									</p>
 								</div>
 							</div>

@@ -5,6 +5,15 @@ export default function RecentWorks() {
 	const cards = [
 		{
 			id: 0,
+			image: "/images/hamrostar/hamrostar_01.jpg",
+			mirrorImage: "/images/hamrostar/hamrostar_reflection.jpg",
+			title: "Social Platform for Connecting Users & Celebrities",
+			work: "Branding | UI/UX",
+			name: "Hamro Star",
+			slug: "hamroStar",
+		},
+		{
+			id: 1,
 			image: "/images/itahari.jpg",
 			mirrorImage: "/images/itahari_mirror.jpg",
 			title: "Rebranding & Website for Itahari Medical",
@@ -13,7 +22,7 @@ export default function RecentWorks() {
 			slug: "itahari",
 		},
 		{
-			id: 1,
+			id: 2,
 			image: "/images/vyayam.jpg",
 			mirrorImage: "/images/vyayam_mirror.jpg",
 			title: "Identity Design for Active Wear Brand based in Nepal",
@@ -22,7 +31,7 @@ export default function RecentWorks() {
 			slug: "vyayam",
 		},
 		{
-			id: 2,
+			id: 3,
 			image: "/images/YetiYap.png",
 			mirrorImage: "/images/YetiYap_mirror.jpg",
 			title: "Identity Design for Nepal's First Viral News Site",

@@ -5,6 +5,11 @@
 		font-size: 5.4rem;
 		margin-top: 3rem;
 		word-break: break-all;
+		a {
+			font-size: inherit;
+			color: inherit;
+			text-decoration: none;
+		}
 	}
 
 	&__links {

@@ -46,7 +46,7 @@ export default function ProjectDetail({ primaryColor, secondaryColor }) {
 					<motion.article variants={sectionVariants} initial="hidden" animate="visible" exit="exit">
 						<div className="center">
 							<div className="title-intro">
-								<h3>Ithari Medical</h3>
+								<h3>Itahari Medical</h3>
 								<h1>Re-brading and Website Design for Itahari Medical</h1>
 								<div className="about-client">
 									<div>
@@ -69,7 +69,7 @@ export default function ProjectDetail({ primaryColor, secondaryColor }) {
 
 			<div className="button-wrapper">
 				<div className="center">
-					<Pagination index={1} />
+					<Pagination index={2} />
 				</div>
 			</div>
 

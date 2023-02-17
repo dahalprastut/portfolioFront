@@ -118,6 +118,10 @@ article {
 		display: flex;
 		h4 {
 			font-family: blackEme;
+			a {
+				font-size: inherit;
+				color: inherit;
+			}
 		}
 		span {
 			font-size: 1.4rem;
@@ -129,7 +133,7 @@ article {
 			}
 		}
 
-		> div:last-child {
+		> div:not(:first-child) {
 			margin-left: 12rem;
 		}
 	}
@@ -164,6 +168,10 @@ article {
 	background: url("../../public/images/vyayamBanner.gif") top center fixed;
 }
 
+.parallax-hamroStar {
+	background: url("../../public/images/hamrostar/Header_1.png") top center fixed;
+}
+
 .yeti-parallax-two {
 	background: url("../../public/images/yeti-card.png") top center fixed;
 }
@@ -182,6 +190,13 @@ article {
 }
 .itahari-parallax-three {
 	background: url("../../public/images/itahariBannerThree.jpg") top center fixed;
+}
+
+.hamroStar-parallax-two {
+	background: url("../../public/images/hamrostar/header_2.png") top center fixed;
+}
+.hamroStar-parallax-three {
+	background: url("../../public/images/hamrostar/header_3.png") top center fixed;
 }
 
 .intro {

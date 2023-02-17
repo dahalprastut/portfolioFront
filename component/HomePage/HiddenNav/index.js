@@ -46,8 +46,8 @@ export default function HiddenNav({ backgroundColor, textColor, toggleClose }) {
 
 	const socialLinks = [
 		{ name: "Behance", link: "https://www.behance.net/samaradhikaad2" },
-		{ name: "Dribble", link: "https://dribbble.com/samar_adh/collections" },
-		{ name: "Facebook", link: "https://www.facebook.com/samar.adhikari1" },
+		{ name: "Dribble", link: "https://dribbble.com/samar_adh/shots" },
+		{ name: "LinkedIn", link: "https://www.linkedin.com/in/samar-adhikari-73a826171/" },
 		{ name: "Instagram", link: "https://www.instagram.com/samar_adh/" },
 	];
 
@@ -116,7 +116,7 @@ export default function HiddenNav({ backgroundColor, textColor, toggleClose }) {
 							</div>
 							<div className="mail">
 								<h3>Say Hi</h3>
-								<span>hello@samaradhikar.com</span>
+								<span>hello@samaradhikari.com</span>
 							</div>
 						</motion.div>
 					</BottomNavStyled>

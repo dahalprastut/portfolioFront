@@ -56,6 +56,14 @@ export default function ProjectDetail({ primaryColor, secondaryColor }) {
 										<span>Responsibility</span>
 										<h4>Branding</h4>
 									</div>
+									<div>
+										<span>Featured In</span>
+										<h4>
+											<a href="https://www.designrush.com/best-designs/logo" target="_blank">
+												Best Logo Designs
+											</a>
+										</h4>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -67,7 +75,7 @@ export default function ProjectDetail({ primaryColor, secondaryColor }) {
 
 			<div className="button-wrapper">
 				<div className="center">
-					<Pagination index={2} />
+					<Pagination index={3} />
 				</div>
 			</div>
 
